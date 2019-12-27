@@ -1,0 +1,25 @@
+uuid: 8f8cb8a3-4619-4cff-9c14-babbf16344c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_components
+    - node.type.home
+  module:
+    - entity_reference_revisions
+id: node.home.field_page_components
+field_name: field_page_components
+entity_type: node
+bundle: home
+label: 'Page Components'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+field_type: entity_reference_revisions
