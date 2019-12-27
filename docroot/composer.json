@@ -24,8 +24,7 @@
         "drush/drush": "^9.7.1 | ^10.0.0",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
-        "zaporylie/composer-drupal-optimizations": "^1.0",
-        "drupal/paragraphs": "^1.10"
+        "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
         "drupal/core-dev": "^8.8.0"
