@@ -1,0 +1,9 @@
+uuid: 82284e13-c1ed-4cf4-aecb-486751ffafb9
+langcode: en
+status: true
+dependencies: {  }
+id: featured_property
+label: 'Featured Property'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

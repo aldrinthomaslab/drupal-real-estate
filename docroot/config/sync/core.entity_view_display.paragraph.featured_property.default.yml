@@ -1,0 +1,12 @@
+uuid: 9373680e-f8c6-43e3-9386-0aa6696d1680
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.featured_property
+id: paragraph.featured_property.default
+targetEntityType: paragraph
+bundle: featured_property
+mode: default
+content: {  }
+hidden: {  }
