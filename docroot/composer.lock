@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a655e603e73f870e202c0c5355d0d6c1",
+    "content-hash": "680aad4981fdf2481b7cee432e90defe",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2582,6 +2582,74 @@
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
             "support": {
                 "source": "https://git.drupalcode.org/project/entity_reference_revisions"
+            }
+        },
+        {
+            "name": "drupal/onlyone",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/onlyone.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/onlyone-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "e4e4f8b062bfa88089ee12f4ae04c3f3ec9c3314"
+            },
+            "require": {
+                "drupal/core": "~8.5"
+            },
+            "require-dev": {
+                "drupal/admin_toolbar_tools": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1572379684",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Cid Almaguer (adriancid)",
+                    "homepage": "https://www.drupal.org/u/adriancid",
+                    "email": "adriancid@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Pierre Vriens (Pierre.Vriens)",
+                    "homepage": "https://www.drupal.org/u/pierrevriens",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jorge Diaz (jorgediazhav)",
+                    "homepage": "https://www.drupal.org/u/jorgediazhav",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Allows Only One node per content type and language.",
+            "homepage": "https://www.drupal.org/project/onlyone",
+            "keywords": [
+                "Drupal",
+                "Limit",
+                "Nodes"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/onlyone",
+                "issues": "https://www.drupal.org/project/issues/onlyone"
             }
         },
         {
