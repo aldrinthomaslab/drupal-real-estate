@@ -1,0 +1,22 @@
+uuid: 43748771-523b-400a-92be-d9203721326e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.property.field_description
+    - node.type.property
+  module:
+    - user
+id: node.property.teaser
+targetEntityType: node
+bundle: property
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_description: true

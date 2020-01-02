@@ -1,0 +1,28 @@
+uuid: a336e720-2ff5-4239-bf2c-2efeb0e722ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.property.field_description
+    - node.type.property
+  module:
+    - text
+    - user
+id: node.property.default
+targetEntityType: node
+bundle: property
+mode: default
+content:
+  field_description:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
