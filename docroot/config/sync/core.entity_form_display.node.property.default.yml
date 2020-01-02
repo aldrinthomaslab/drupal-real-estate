@@ -10,10 +10,13 @@ dependencies:
     - field.field.node.property.field_gallery_image
     - field.field.node.property.field_is_featured
     - field.field.node.property.field_listing_price
+    - field.field.node.property.field_location
+    - field.field.node.property.field_property_address
     - field.field.node.property.field_property_area
     - field.field.node.property.field_property_listing_type
     - node.type.property
   module:
+    - geolocation
     - media_library
     - path
     - text
@@ -77,6 +80,20 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_location:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  field_property_address:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
     region: content
   field_property_area:
     weight: 12

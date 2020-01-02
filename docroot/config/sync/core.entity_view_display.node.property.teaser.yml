@@ -11,6 +11,8 @@ dependencies:
     - field.field.node.property.field_gallery_image
     - field.field.node.property.field_is_featured
     - field.field.node.property.field_listing_price
+    - field.field.node.property.field_location
+    - field.field.node.property.field_property_address
     - field.field.node.property.field_property_area
     - field.field.node.property.field_property_listing_type
     - node.type.property
@@ -34,5 +36,7 @@ hidden:
   field_gallery_image: true
   field_is_featured: true
   field_listing_price: true
+  field_location: true
+  field_property_address: true
   field_property_area: true
   field_property_listing_type: true
