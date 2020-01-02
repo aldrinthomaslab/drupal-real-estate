@@ -1,16 +1,16 @@
-uuid: 58d752ad-3322-4218-bc42-0176a24655d1
+uuid: 5c1ff3d1-98ac-4bff-9e98-84b63f925ee3
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.home.field_page_components
-    - node.type.home
+    - field.field.node.homepage.field_homepage_components
+    - node.type.homepage
   module:
     - user
-id: node.home.teaser
+id: node.homepage.teaser
 targetEntityType: node
-bundle: home
+bundle: homepage
 mode: teaser
 content:
   links:
@@ -19,4 +19,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_page_components: true
+  field_homepage_components: true

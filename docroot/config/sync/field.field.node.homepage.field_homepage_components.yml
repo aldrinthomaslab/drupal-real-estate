@@ -1,21 +1,21 @@
-uuid: 8f8cb8a3-4619-4cff-9c14-babbf16344c9
+uuid: f94401d9-798a-4a1c-9079-f6366b36aa8a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_page_components
-    - node.type.home
+    - field.storage.node.field_homepage_components
+    - node.type.homepage
     - paragraphs.paragraphs_type.featured_agents
     - paragraphs.paragraphs_type.featured_property
     - paragraphs.paragraphs_type.misc_information
     - paragraphs.paragraphs_type.testimonials
   module:
     - entity_reference_revisions
-id: node.home.field_page_components
-field_name: field_page_components
+id: node.homepage.field_homepage_components
+field_name: field_homepage_components
 entity_type: node
-bundle: home
-label: 'Page Components'
+bundle: homepage
+label: 'Home Page Components'
 description: ''
 required: false
 translatable: false
@@ -26,27 +26,27 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      misc_information: misc_information
       featured_agents: featured_agents
       featured_property: featured_property
+      misc_information: misc_information
       testimonials: testimonials
     target_bundles_drag_drop:
-      misc_information:
-        enabled: true
-        weight: 10
       agent_profile:
-        weight: 11
+        weight: 10
         enabled: false
       faq_group:
-        weight: 12
+        weight: 11
         enabled: false
       faq_item:
-        weight: 13
+        weight: 12
         enabled: false
       featured_agents:
         enabled: true
-        weight: 14
+        weight: 13
       featured_property:
+        enabled: true
+        weight: 14
+      misc_information:
         enabled: true
         weight: 15
       statistic:

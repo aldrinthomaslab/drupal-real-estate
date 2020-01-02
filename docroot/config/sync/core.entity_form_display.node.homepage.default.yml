@@ -1,27 +1,27 @@
-uuid: ce716a57-c2bf-4526-8cab-f13ca750a9ad
+uuid: 5fa5d0fa-faa3-43ba-bd9a-46cf910dbb08
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.home.field_page_components
-    - node.type.home
+    - field.field.node.homepage.field_homepage_components
+    - node.type.homepage
   module:
     - paragraphs
     - path
-id: node.home.default
+id: node.homepage.default
 targetEntityType: node
-bundle: home
+bundle: homepage
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 1
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_page_components:
+  field_homepage_components:
     type: entity_reference_paragraphs
-    weight: 6
+    weight: 123
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -33,7 +33,7 @@ content:
     region: content
   path:
     type: path
-    weight: 4
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -41,26 +41,34 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 2
+    weight: 15
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 120
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 3
+    weight: 16
     region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 0
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -68,5 +76,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  title: true
+hidden: {  }
