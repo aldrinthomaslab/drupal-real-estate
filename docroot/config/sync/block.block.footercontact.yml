@@ -1,0 +1,25 @@
+uuid: 49ff7d0e-50a5-4f3d-b2d1-d36e5e6e8390
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_contact_info:e135aa9d-bdad-4295-abd6-50b852cc6fec'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: footercontact
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:e135aa9d-bdad-4295-abd6-50b852cc6fec'
+settings:
+  id: 'block_content:e135aa9d-bdad-4295-abd6-50b852cc6fec'
+  label: 'Footer Contact'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
