@@ -1,0 +1,57 @@
+uuid: 94523676-8dc0-4ef1-aa01-6914d191610b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.faq_group
+    - paragraphs.paragraphs_type.misc_information
+    - paragraphs.paragraphs_type.statistic_info
+  module:
+    - entity_reference_revisions
+id: paragraph.misc_information.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: misc_information
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      faq_group: faq_group
+      statistic_info: statistic_info
+    target_bundles_drag_drop:
+      misc_information:
+        weight: 10
+        enabled: false
+      agent_profile:
+        weight: 11
+        enabled: false
+      faq_group:
+        enabled: true
+        weight: 12
+      faq_item:
+        weight: 13
+        enabled: false
+      featured_agents:
+        weight: 14
+        enabled: false
+      featured_property:
+        weight: 15
+        enabled: false
+      statistic:
+        weight: 16
+        enabled: false
+      statistic_info:
+        enabled: true
+        weight: 17
+      testimonials:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,52 @@
+uuid: a99c0be0-619a-4fef-9a10-7db6355f6f4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_statis
+    - paragraphs.paragraphs_type.statistic
+    - paragraphs.paragraphs_type.statistic_info
+  module:
+    - entity_reference_revisions
+id: paragraph.statistic_info.field_statis
+field_name: field_statis
+entity_type: paragraph
+bundle: statistic_info
+label: 'Statistic Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      statistic: statistic
+    target_bundles_drag_drop:
+      statistic_info:
+        weight: 9
+        enabled: false
+      agent_profile:
+        weight: 10
+        enabled: false
+      faq_group:
+        weight: 11
+        enabled: false
+      faq_item:
+        weight: 12
+        enabled: false
+      featured_agents:
+        weight: 13
+        enabled: false
+      featured_property:
+        weight: 14
+        enabled: false
+      statistic:
+        enabled: true
+        weight: 15
+      testimonials:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

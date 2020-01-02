@@ -1,0 +1,9 @@
+uuid: 4b23de33-effb-4e9f-b513-f4e8f9b828b9
+langcode: en
+status: true
+dependencies: {  }
+id: misc_information
+label: 'Misc Information'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

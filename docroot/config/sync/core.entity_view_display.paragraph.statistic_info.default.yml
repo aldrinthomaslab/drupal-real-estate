@@ -1,0 +1,24 @@
+uuid: f3ccdb70-2eed-4896-aeb8-7535f8a2706b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.statistic_info.field_statis
+    - paragraphs.paragraphs_type.statistic_info
+  module:
+    - entity_reference_revisions
+id: paragraph.statistic_info.default
+targetEntityType: paragraph
+bundle: statistic_info
+mode: default
+content:
+  field_statis:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

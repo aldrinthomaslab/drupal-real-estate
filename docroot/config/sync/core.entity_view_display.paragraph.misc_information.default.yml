@@ -1,0 +1,34 @@
+uuid: 6ebd5e2f-f6f9-46f6-bafc-0c617add626c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.misc_information.field_content
+    - field.field.paragraph.misc_information.field_feature_image
+    - paragraphs.paragraphs_type.misc_information
+  module:
+    - entity_reference_revisions
+id: paragraph.misc_information.default
+targetEntityType: paragraph
+bundle: misc_information
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_feature_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }
