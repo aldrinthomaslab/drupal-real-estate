@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.property.field_banner_image
     - field.field.node.property.field_bathroom_quantity
     - field.field.node.property.field_bed_quantity
+    - field.field.node.property.field_contact_number
     - field.field.node.property.field_description
     - field.field.node.property.field_gallery_image
     - field.field.node.property.field_is_featured
@@ -87,6 +88,7 @@ content:
       link: true
     third_party_settings: {  }
 hidden:
+  field_contact_number: true
   field_description: true
   field_gallery_image: true
   field_is_featured: true

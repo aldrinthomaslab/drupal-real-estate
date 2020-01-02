@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.property.field_banner_image
     - field.field.node.property.field_bathroom_quantity
     - field.field.node.property.field_bed_quantity
+    - field.field.node.property.field_contact_number
     - field.field.node.property.field_description
     - field.field.node.property.field_gallery_image
     - field.field.node.property.field_is_featured
@@ -51,6 +52,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_contact_number:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_description:
     weight: 9
