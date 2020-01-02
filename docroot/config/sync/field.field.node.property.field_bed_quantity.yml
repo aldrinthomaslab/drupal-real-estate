@@ -1,0 +1,25 @@
+uuid: 4167f390-5928-45fd-ad0e-82f57ef0a35b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bed_quantity
+    - node.type.property
+id: node.property.field_bed_quantity
+field_name: field_bed_quantity
+entity_type: node
+bundle: property
+label: 'Number of Beds'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

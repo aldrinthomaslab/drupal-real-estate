@@ -1,0 +1,23 @@
+uuid: c04af2c5-d865-4368-aef1-6ebdf4508f06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_featured
+    - node.type.property
+id: node.property.field_is_featured
+field_name: field_is_featured
+entity_type: node
+bundle: property
+label: 'Is Featured'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

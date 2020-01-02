@@ -1,0 +1,23 @@
+uuid: f42190a7-d7a2-476c-a1ea-dcae5aff502e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_area
+    - node.type.property
+id: node.property.field_property_area
+field_name: field_property_area
+entity_type: node
+bundle: property
+label: 'Property Area'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float
