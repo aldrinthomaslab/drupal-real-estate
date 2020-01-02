@@ -1,0 +1,58 @@
+uuid: e3c352a2-e423-4996-9fd0-421ab7cba825
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contact_info
+    - field.storage.block_content.field_social_media_contacts
+    - paragraphs.paragraphs_type.social_media_link
+  module:
+    - entity_reference_revisions
+id: block_content.footer_contact_info.field_social_media_contacts
+field_name: field_social_media_contacts
+entity_type: block_content
+bundle: footer_contact_info
+label: 'Social Media Contacts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      social_media_link: social_media_link
+    target_bundles_drag_drop:
+      agent_profile:
+        weight: 11
+        enabled: false
+      faq_group:
+        weight: 12
+        enabled: false
+      faq_item:
+        weight: 13
+        enabled: false
+      featured_agents:
+        weight: 14
+        enabled: false
+      featured_property:
+        weight: 15
+        enabled: false
+      misc_information:
+        weight: 16
+        enabled: false
+      social_media_link:
+        enabled: true
+        weight: 17
+      statistic:
+        weight: 18
+        enabled: false
+      statistic_info:
+        weight: 19
+        enabled: false
+      testimonials:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

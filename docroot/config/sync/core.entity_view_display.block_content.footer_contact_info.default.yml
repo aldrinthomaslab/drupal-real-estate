@@ -8,7 +8,9 @@ dependencies:
     - field.field.block_content.footer_contact_info.field_contact_email
     - field.field.block_content.footer_contact_info.field_contact_number
     - field.field.block_content.footer_contact_info.field_logo_image
+    - field.field.block_content.footer_contact_info.field_social_media_contacts
   module:
+    - entity_reference_revisions
     - text
 id: block_content.footer_contact_info.default
 targetEntityType: block_content
@@ -44,6 +46,15 @@ content:
     settings:
       view_mode: default
       link: false
+    third_party_settings: {  }
+    region: content
+  field_social_media_contacts:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     region: content
 hidden: {  }

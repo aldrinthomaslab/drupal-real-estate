@@ -8,8 +8,10 @@ dependencies:
     - field.field.block_content.footer_contact_info.field_contact_email
     - field.field.block_content.footer_contact_info.field_contact_number
     - field.field.block_content.footer_contact_info.field_logo_image
+    - field.field.block_content.footer_contact_info.field_social_media_contacts
   module:
     - media_library
+    - paragraphs
     - text
 id: block_content.footer_contact_info.default
 targetEntityType: block_content
@@ -45,6 +47,18 @@ content:
     weight: 26
     settings:
       media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_social_media_contacts:
+    type: entity_reference_paragraphs
+    weight: 30
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
     region: content
   info:
