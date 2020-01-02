@@ -1,8 +1,9 @@
-uuid: a336e720-2ff5-4239-bf2c-2efeb0e722ea
+uuid: d5777ef1-66c4-4706-b5b7-c4f2cad5303c
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.preview
     - field.field.node.property.field_banner_image
     - field.field.node.property.field_bathroom_quantity
     - field.field.node.property.field_bed_quantity
@@ -16,26 +17,16 @@ dependencies:
     - field.field.node.property.field_property_listing_type
     - node.type.property
   module:
-    - geolocation
     - text
     - user
-id: node.property.default
+id: node.property.preview
 targetEntityType: node
 bundle: property
-mode: default
+mode: preview
 content:
-  field_banner_image:
-    type: entity_reference_entity_view
-    weight: 103
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
   field_bathroom_quantity:
-    weight: 108
-    label: above
+    weight: 5
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -43,8 +34,8 @@ content:
     type: number_integer
     region: content
   field_bed_quantity:
-    weight: 107
-    label: above
+    weight: 4
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
@@ -52,34 +43,16 @@ content:
     type: number_integer
     region: content
   field_description:
-    weight: 101
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_gallery_image:
-    type: entity_reference_entity_view
-    weight: 104
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      view_mode: default
-      link: false
+      trim_length: 500
     third_party_settings: {  }
-    region: content
-  field_is_featured:
-    weight: 109
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
+    type: text_trimmed
     region: content
   field_listing_price:
-    weight: 105
-    label: above
+    weight: 2
+    label: hidden
     settings:
       thousand_separator: ''
       decimal_separator: .
@@ -88,23 +61,16 @@ content:
     third_party_settings: {  }
     type: number_decimal
     region: content
-  field_location:
-    weight: 111
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: geolocation_latlng
-    region: content
   field_property_address:
-    weight: 110
-    label: above
+    weight: 6
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_property_area:
-    weight: 106
-    label: above
+    weight: 3
+    label: hidden
     settings:
       thousand_separator: ''
       decimal_separator: .
@@ -114,16 +80,16 @@ content:
     type: number_decimal
     region: content
   field_property_listing_type:
-    weight: 102
-    label: above
+    weight: 1
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_banner_image: true
+  field_gallery_image: true
+  field_is_featured: true
+  field_location: true
+  links: true
