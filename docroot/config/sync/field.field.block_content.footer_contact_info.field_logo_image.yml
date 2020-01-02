@@ -1,0 +1,28 @@
+uuid: e6c29656-6f17-4146-8e9e-0c1b6450eaf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contact_info
+    - field.storage.block_content.field_logo_image
+    - media.type.image
+id: block_content.footer_contact_info.field_logo_image
+field_name: field_logo_image
+entity_type: block_content
+bundle: footer_contact_info
+label: 'Logo Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 4d44c96c-849f-4bf9-8049-f1ee676092b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contact_info
+    - field.storage.block_content.field_contact_number
+id: block_content.footer_contact_info.field_contact_number
+field_name: field_contact_number
+entity_type: block_content
+bundle: footer_contact_info
+label: 'Contact Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

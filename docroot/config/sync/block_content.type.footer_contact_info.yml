@@ -1,0 +1,8 @@
+uuid: 82580ea4-b55a-406a-9dad-e82daa092da7
+langcode: en
+status: true
+dependencies: {  }
+id: footer_contact_info
+label: 'Footer Contact Info'
+revision: 0
+description: ''

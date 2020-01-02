@@ -1,0 +1,21 @@
+uuid: ffd9ac75-ecd7-439a-8c2c-6a490a737429
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_contact_number
+field_name: field_contact_number
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

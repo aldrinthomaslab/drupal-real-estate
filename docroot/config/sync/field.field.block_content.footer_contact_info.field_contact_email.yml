@@ -1,0 +1,19 @@
+uuid: c2c743bd-96e9-4c52-bb2b-dad65993f2f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contact_info
+    - field.storage.block_content.field_contact_email
+id: block_content.footer_contact_info.field_contact_email
+field_name: field_contact_email
+entity_type: block_content
+bundle: footer_contact_info
+label: 'Contact Email'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,21 @@
+uuid: d48c40b8-cc1d-464a-bc73-24d313b12f85
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_contact_info
+    - field.storage.block_content.field_contact_address
+  module:
+    - text
+id: block_content.footer_contact_info.field_contact_address
+field_name: field_contact_address
+entity_type: block_content
+bundle: footer_contact_info
+label: 'Contact Address'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
