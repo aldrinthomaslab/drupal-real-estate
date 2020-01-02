@@ -1,0 +1,8 @@
+uuid: a9f4c0e7-dc0a-4534-be64-50c3696bdd36
+langcode: en
+status: true
+dependencies: {  }
+name: 'Listing Type'
+vid: listing_type
+description: ''
+weight: 0
