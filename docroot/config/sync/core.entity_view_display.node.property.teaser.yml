@@ -23,20 +23,72 @@ targetEntityType: node
 bundle: property
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_banner_image:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_bathroom_quantity:
+    type: number_integer
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_bed_quantity:
+    type: number_integer
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_listing_price:
+    type: number_decimal
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_property_address:
+    type: basic_string
+    weight: 1
+    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+  field_property_area:
+    type: number_decimal
+    weight: 6
     region: content
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_property_listing_type:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
 hidden:
-  field_banner_image: true
-  field_bathroom_quantity: true
-  field_bed_quantity: true
   field_description: true
   field_gallery_image: true
   field_is_featured: true
-  field_listing_price: true
   field_location: true
-  field_property_address: true
-  field_property_area: true
-  field_property_listing_type: true
+  links: true
