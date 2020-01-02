@@ -1,0 +1,28 @@
+uuid: 1c84bc48-4a52-4b75-a825-0d27c9a19fd5
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testimonial.field_author_name
+    - field.field.node.testimonial.field_author_title
+    - field.field.node.testimonial.field_content
+    - field.field.node.testimonial.field_profile_image
+    - node.type.testimonial
+  module:
+    - user
+id: node.testimonial.teaser
+targetEntityType: node
+bundle: testimonial
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_author_name: true
+  field_author_title: true
+  field_content: true
+  field_profile_image: true
