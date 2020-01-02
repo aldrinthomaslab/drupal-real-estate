@@ -1,0 +1,9 @@
+uuid: b9e44acd-74b8-4f04-99a9-a8164c85d553
+langcode: en
+status: true
+dependencies: {  }
+id: agent_profile
+label: 'Agent Profile'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

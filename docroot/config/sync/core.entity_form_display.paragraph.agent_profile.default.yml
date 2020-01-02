@@ -1,0 +1,42 @@
+uuid: 3a782ca2-ed89-4609-ad97-bcb18e1fffba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.agent_profile.field_agent_title
+    - field.field.paragraph.agent_profile.field_name
+    - field.field.paragraph.agent_profile.field_profile_image
+    - paragraphs.paragraphs_type.agent_profile
+  module:
+    - media_library
+id: paragraph.agent_profile.default
+targetEntityType: paragraph
+bundle: agent_profile
+mode: default
+content:
+  field_agent_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_profile_image:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

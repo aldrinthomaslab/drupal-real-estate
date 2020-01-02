@@ -1,0 +1,19 @@
+uuid: a4f1f32e-a9e8-4368-91be-97d1a1ab96d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_agent_title
+    - paragraphs.paragraphs_type.agent_profile
+id: paragraph.agent_profile.field_agent_title
+field_name: field_agent_title
+entity_type: paragraph
+bundle: agent_profile
+label: 'Agent Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

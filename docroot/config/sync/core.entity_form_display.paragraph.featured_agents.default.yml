@@ -1,0 +1,29 @@
+uuid: 29874f9a-b862-4346-84b0-599918ccfa38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured_agents.field_featured_agents
+    - paragraphs.paragraphs_type.featured_agents
+  module:
+    - paragraphs
+id: paragraph.featured_agents.default
+targetEntityType: paragraph
+bundle: featured_agents
+mode: default
+content:
+  field_featured_agents:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

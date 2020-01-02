@@ -1,0 +1,19 @@
+uuid: fb895780-7a4c-4ae8-aaaa-2baade0a26ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.agent_profile
+id: paragraph.agent_profile.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: agent_profile
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

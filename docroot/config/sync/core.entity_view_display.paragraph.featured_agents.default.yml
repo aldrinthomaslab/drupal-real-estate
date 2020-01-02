@@ -1,0 +1,24 @@
+uuid: 59c76643-4e83-46be-a8d0-ce820965eb2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured_agents.field_featured_agents
+    - paragraphs.paragraphs_type.featured_agents
+  module:
+    - entity_reference_revisions
+id: paragraph.featured_agents.default
+targetEntityType: paragraph
+bundle: featured_agents
+mode: default
+content:
+  field_featured_agents:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

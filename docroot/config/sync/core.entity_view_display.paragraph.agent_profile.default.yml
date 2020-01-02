@@ -1,0 +1,40 @@
+uuid: 385f9304-a35a-4ab5-b315-d6857074e267
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.agent_profile.field_agent_title
+    - field.field.paragraph.agent_profile.field_name
+    - field.field.paragraph.agent_profile.field_profile_image
+    - paragraphs.paragraphs_type.agent_profile
+id: paragraph.agent_profile.default
+targetEntityType: paragraph
+bundle: agent_profile
+mode: default
+content:
+  field_agent_title:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_profile_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }
