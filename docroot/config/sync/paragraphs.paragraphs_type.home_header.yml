@@ -1,0 +1,9 @@
+uuid: ba79b8c7-43a2-408b-a12c-e9a00f0a1ca4
+langcode: en
+status: true
+dependencies: {  }
+id: home_header
+label: 'Home Header'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

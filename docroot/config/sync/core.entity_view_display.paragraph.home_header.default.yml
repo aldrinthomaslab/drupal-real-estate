@@ -1,0 +1,50 @@
+uuid: 352d00bb-2f28-4080-b354-9513964cd37b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_header.field_header_form
+    - field.field.paragraph.home_header.field_header_subtitle
+    - field.field.paragraph.home_header.field_header_title
+    - field.field.paragraph.home_header.field_home_header_background
+    - paragraphs.paragraphs_type.home_header
+  module:
+    - block_field
+id: paragraph.home_header.default
+targetEntityType: paragraph
+bundle: home_header
+mode: default
+content:
+  field_header_form:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_header_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_header_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_home_header_background:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

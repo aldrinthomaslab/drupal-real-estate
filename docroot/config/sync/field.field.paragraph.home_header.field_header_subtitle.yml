@@ -1,0 +1,19 @@
+uuid: 0b8f113d-1a97-43a7-9d93-75e451e89a14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header_subtitle
+    - paragraphs.paragraphs_type.home_header
+id: paragraph.home_header.field_header_subtitle
+field_name: field_header_subtitle
+entity_type: paragraph
+bundle: home_header
+label: 'Sub Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

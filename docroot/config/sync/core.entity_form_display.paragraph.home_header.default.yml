@@ -1,0 +1,53 @@
+uuid: e57b9aaf-fdf8-4e1d-8089-38a2e7bbc594
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.home_header.field_header_form
+    - field.field.paragraph.home_header.field_header_subtitle
+    - field.field.paragraph.home_header.field_header_title
+    - field.field.paragraph.home_header.field_home_header_background
+    - paragraphs.paragraphs_type.home_header
+  module:
+    - block_field
+    - media_library
+id: paragraph.home_header.default
+targetEntityType: paragraph
+bundle: home_header
+mode: default
+content:
+  field_header_form:
+    weight: 3
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_header_subtitle:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_header_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_header_background:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

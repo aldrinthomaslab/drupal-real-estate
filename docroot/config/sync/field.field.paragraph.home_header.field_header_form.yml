@@ -1,0 +1,22 @@
+uuid: be79bca6-3e1e-421a-bba1-8f3243adb9b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header_form
+    - paragraphs.paragraphs_type.home_header
+  module:
+    - block_field
+id: paragraph.home_header.field_header_form
+field_name: field_header_form
+entity_type: paragraph
+bundle: home_header
+label: 'Header Form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids: {  }
+field_type: block_field

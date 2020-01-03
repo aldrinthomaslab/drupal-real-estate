@@ -1,0 +1,20 @@
+uuid: f478ef99-f0d1-4982-ad57-11e70a3819d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_home_header_background
+field_name: field_home_header_background
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
