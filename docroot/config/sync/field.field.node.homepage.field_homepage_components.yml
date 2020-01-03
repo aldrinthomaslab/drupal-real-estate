@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.featured_agents
     - paragraphs.paragraphs_type.featured_property
     - paragraphs.paragraphs_type.misc_information
+    - paragraphs.paragraphs_type.popular_properties
     - paragraphs.paragraphs_type.testimonials
   module:
     - entity_reference_revisions
@@ -29,6 +30,7 @@ settings:
       featured_agents: featured_agents
       featured_property: featured_property
       misc_information: misc_information
+      popular_properties: popular_properties
       testimonials: testimonials
     target_bundles_drag_drop:
       agent_profile:
@@ -58,6 +60,9 @@ settings:
       statistic_info:
         weight: 17
         enabled: false
+      popular_properties:
+        enabled: true
+        weight: 18
       testimonials:
         enabled: true
         weight: 18

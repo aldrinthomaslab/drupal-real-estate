@@ -1,0 +1,26 @@
+uuid: 1c38a5fc-73b3-49b7-9d02-e027f83d9229
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.popular_properties.field_popular_properties_block
+    - paragraphs.paragraphs_type.popular_properties
+  module:
+    - block_field
+id: paragraph.popular_properties.default
+targetEntityType: paragraph
+bundle: popular_properties
+mode: default
+content:
+  field_popular_properties_block:
+    weight: 0
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+hidden:
+  created: true
+  status: true

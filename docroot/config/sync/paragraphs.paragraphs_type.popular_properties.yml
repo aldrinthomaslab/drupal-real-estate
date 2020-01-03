@@ -1,0 +1,9 @@
+uuid: 3df484bf-abfe-48e1-ac50-1be8bffb1dcb
+langcode: en
+status: true
+dependencies: {  }
+id: popular_properties
+label: 'Popular Properties'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

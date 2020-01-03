@@ -1,0 +1,19 @@
+uuid: a6838a30-6dae-4ce3-8350-4a565b607d94
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_field
+    - paragraphs
+id: paragraph.field_popular_properties_block
+field_name: field_popular_properties_block
+entity_type: paragraph
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
