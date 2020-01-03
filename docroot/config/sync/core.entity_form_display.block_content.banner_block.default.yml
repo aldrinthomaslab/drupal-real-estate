@@ -1,0 +1,38 @@
+uuid: 3b6ce8ed-fde8-40ab-9c82-c51802f5bdcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block
+    - field.field.block_content.banner_block.field_banner_text
+    - field.field.block_content.banner_block.field_contact_number
+id: block_content.banner_block.default
+targetEntityType: block_content
+bundle: banner_block
+mode: default
+content:
+  field_banner_text:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_contact_number:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
