@@ -1,0 +1,25 @@
+uuid: 31fa786e-8084-4afc-854c-4c6d5400eeeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.useful-links
+  module:
+    - system
+  theme:
+    - drupal_realestate
+id: drupal_realestate_usefullinks
+theme: drupal_realestate
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:useful-links'
+settings:
+  id: 'system_menu_block:useful-links'
+  label: 'Useful Links'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

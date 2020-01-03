@@ -1,0 +1,22 @@
+uuid: 46c38cf0-dbb3-4ff4-9971-8a5ffeb236d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupal_realestate
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: drupal_realestate_help
+theme: drupal_realestate
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: e0f09fab-5835-44a9-8c48-e447be28a9c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - drupal_realestate
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupal_realestate_page_title
+theme: drupal_realestate
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      property: property
+      testimonial: testimonial
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

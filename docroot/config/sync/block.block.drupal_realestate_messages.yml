@@ -1,0 +1,22 @@
+uuid: 796cde8b-ed92-4093-8b70-1ee86840ba25
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_realestate
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupal_realestate_messages
+theme: drupal_realestate
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

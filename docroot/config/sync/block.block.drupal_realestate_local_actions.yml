@@ -1,0 +1,20 @@
+uuid: d0909b32-9d1b-4b7c-81d3-530288492246
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal_realestate
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: drupal_realestate_local_actions
+theme: drupal_realestate
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

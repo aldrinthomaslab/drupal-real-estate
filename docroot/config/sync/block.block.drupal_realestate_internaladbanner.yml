@@ -1,0 +1,33 @@
+uuid: c9fbba09-a106-44a8-9458-ece8935fdbfb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block:484a6b29-4f2e-4fee-ac91-1c16144979be'
+  module:
+    - block_content
+    - node
+  theme:
+    - drupal_realestate
+id: drupal_realestate_internaladbanner
+theme: drupal_realestate
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:484a6b29-4f2e-4fee-ac91-1c16144979be'
+settings:
+  id: 'block_content:484a6b29-4f2e-4fee-ac91-1c16144979be'
+  label: 'Internal Ad Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      homepage: homepage
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
