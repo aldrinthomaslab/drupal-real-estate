@@ -4,3 +4,6 @@ description: 'Real Estate Theme created for as Drupal Training.'
 package: CnT Drupal Real Estate
 core: 8.x
 base theme:: stark
+
+libraries:
+  - drupal_realestate/global
