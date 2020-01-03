@@ -1,0 +1,48 @@
+uuid: 81522061-4e94-4ec5-91a9-24147f28b0ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_text_list
+field_name: field_text_list
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Marketing & SEO'
+      label: 'Marketing & SEO'
+    -
+      value: Startup
+      label: Startup
+    -
+      value: 'Finance Solution'
+      label: 'Finance Solution'
+    -
+      value: Food
+      label: Food
+    -
+      value: Travel
+      label: Travel
+    -
+      value: About
+      label: About
+    -
+      value: Blog
+      label: Blog
+    -
+      value: Contact
+      label: Contact
+    -
+      value: Appointment
+      label: Appointment
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -10,8 +10,8 @@ dependencies:
     - bartik
 id: footercontact
 theme: bartik
-region: footer_fifth
-weight: 0
+region: footer_first
+weight: -6
 provider: null
 plugin: 'block_content:e135aa9d-bdad-4295-abd6-50b852cc6fec'
 settings:

@@ -1,0 +1,21 @@
+uuid: 458dd77a-905a-4990-9bc5-52ad658f2638
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_list
+    - field.storage.block_content.field_text_list
+  module:
+    - options
+id: block_content.footer_list.field_text_list
+field_name: field_text_list
+entity_type: block_content
+bundle: footer_list
+label: 'Text List'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
