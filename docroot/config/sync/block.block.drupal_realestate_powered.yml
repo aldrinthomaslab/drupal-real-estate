@@ -1,4 +1,4 @@
-uuid: 85ac54e1-010d-4300-82ba-2c7f7b63cac2
+uuid: 7e6a5adb-f33b-4bee-b90a-28c0f9d2a175
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ _core:
   default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
 id: drupal_realestate_powered
 theme: drupal_realestate
-region: sidebar_first
+region: footer_fifth
 weight: -5
 provider: null
 plugin: system_powered_by_block

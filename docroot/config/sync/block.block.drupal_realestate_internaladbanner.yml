@@ -1,4 +1,4 @@
-uuid: c9fbba09-a106-44a8-9458-ece8935fdbfb
+uuid: af82fea7-ddbb-4774-b9f1-7b8ea8fd4f58
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - drupal_realestate
 id: drupal_realestate_internaladbanner
 theme: drupal_realestate
-region: sidebar_first
+region: featured_bottom_first
 weight: 0
 provider: null
 plugin: 'block_content:484a6b29-4f2e-4fee-ac91-1c16144979be'

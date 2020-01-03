@@ -1,4 +1,4 @@
-uuid: 5984ec68-d76d-48db-935f-d5d284145200
+uuid: 20726b6e-c405-4ef4-800f-f3f61c097750
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - drupal_realestate
 id: drupal_realestate_footercontact
 theme: drupal_realestate
-region: sidebar_first
+region: footer_first
 weight: -6
 provider: null
 plugin: 'block_content:e135aa9d-bdad-4295-abd6-50b852cc6fec'

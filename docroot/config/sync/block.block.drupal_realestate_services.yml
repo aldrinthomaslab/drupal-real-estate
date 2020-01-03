@@ -1,4 +1,4 @@
-uuid: c9347821-1691-494a-a31e-278004a800af
+uuid: 8bdaa8df-e6a6-454e-9a92-792f1142e2ab
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - drupal_realestate
 id: drupal_realestate_services
 theme: drupal_realestate
-region: sidebar_first
+region: footer_second
 weight: 0
 provider: null
 plugin: 'system_menu_block:services'

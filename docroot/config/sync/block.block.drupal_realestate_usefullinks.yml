@@ -1,4 +1,4 @@
-uuid: 31fa786e-8084-4afc-854c-4c6d5400eeeb
+uuid: 9dd92148-2df0-4183-9af6-7c7f7ee6a401
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - drupal_realestate
 id: drupal_realestate_usefullinks
 theme: drupal_realestate
-region: sidebar_first
+region: footer_third
 weight: 0
 provider: null
 plugin: 'system_menu_block:useful-links'
