@@ -2,5 +2,5 @@ global:
   version: VERSION
   css:
     base:
-      css/style.css: {}
       css/bootstrap.min.css: {}
+      css/style.css: {}

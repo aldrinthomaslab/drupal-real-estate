@@ -1,0 +1,26 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'slider_area'
+  ]
+%}
+{% block paragraph %}
+  <div {{ attributes.addClass(classes) }} >
+    <div class="single_slider  d-flex align-items-center slider_bg_1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-10 offset-xl-1">
+            <div class="slider_text text-center justify-content-center">
+              <h3>{{ elements.field_header_title }}</h3>
+              <p>{{ elements.field_header_subtitle }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ kint() }}
+{% endblock paragraph %}
