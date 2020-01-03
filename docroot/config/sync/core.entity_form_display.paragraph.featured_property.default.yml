@@ -3,12 +3,33 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.featured_property.field_featured_properties
+    - field.field.paragraph.featured_property.field_section_background
     - paragraphs.paragraphs_type.featured_property
+  module:
+    - media_library
 id: paragraph.featured_property.default
 targetEntityType: paragraph
 bundle: featured_property
 mode: default
-content: {  }
+content:
+  field_featured_properties:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_section_background:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   created: true
   status: true
