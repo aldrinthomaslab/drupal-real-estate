@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_homepage_components
     - node.type.homepage
+    - paragraphs.paragraphs_type.featured_agents
     - paragraphs.paragraphs_type.featured_property
     - paragraphs.paragraphs_type.misc_information
     - paragraphs.paragraphs_type.testimonials
@@ -25,6 +26,7 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
+      featured_agents: featured_agents
       featured_property: featured_property
       misc_information: misc_information
       testimonials: testimonials
@@ -39,8 +41,8 @@ settings:
         weight: 12
         enabled: false
       featured_agents:
+        enabled: true
         weight: 13
-        enabled: false
       featured_property:
         enabled: true
         weight: 14
