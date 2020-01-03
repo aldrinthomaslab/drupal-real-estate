@@ -15,7 +15,10 @@ label: 'Testimonial Block'
 description: ''
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    plugin_id: 'views_block:testimonials_block-block_1'
+    settings: {  }
 default_value_callback: ''
 settings:
   plugin_ids: {  }
