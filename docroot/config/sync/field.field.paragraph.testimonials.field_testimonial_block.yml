@@ -1,0 +1,22 @@
+uuid: cb4535db-7382-4dcd-ab9c-c4c49459d57b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_testimonial_block
+    - paragraphs.paragraphs_type.testimonials
+  module:
+    - block_field
+id: paragraph.testimonials.field_testimonial_block
+field_name: field_testimonial_block
+entity_type: paragraph
+bundle: testimonials
+label: 'Testimonial Block'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids: {  }
+field_type: block_field

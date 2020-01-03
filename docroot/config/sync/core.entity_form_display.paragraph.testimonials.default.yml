@@ -1,0 +1,26 @@
+uuid: c31330d5-30a0-47cd-a09e-7e6f3e28feda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.testimonials.field_testimonial_block
+    - paragraphs.paragraphs_type.testimonials
+  module:
+    - block_field
+id: paragraph.testimonials.default
+targetEntityType: paragraph
+bundle: testimonials
+mode: default
+content:
+  field_testimonial_block:
+    weight: 0
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,19 @@
+uuid: d1a4745d-36f3-4944-8b53-b895389b04c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_field
+    - paragraphs
+id: paragraph.field_testimonial_block
+field_name: field_testimonial_block
+entity_type: paragraph
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
