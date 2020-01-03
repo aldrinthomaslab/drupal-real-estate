@@ -1,0 +1,9 @@
+{% set heading_id = attributes.id ~ '-menu'|clean_id %}
+<div class="main-menu d-none d-lg-block">
+  <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby') }}>
+    {# Menu. #}
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </nav>
+</div>

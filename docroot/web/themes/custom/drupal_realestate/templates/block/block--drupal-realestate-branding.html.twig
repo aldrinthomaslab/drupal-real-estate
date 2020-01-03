@@ -1,0 +1,7 @@
+<div{{ attributes.addClass('logo') }}>
+  {% if site_logo %}
+    <a href="{{ path('<front>') }}" rel="home">
+      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+    </a>
+  {% endif %}
+</div>
