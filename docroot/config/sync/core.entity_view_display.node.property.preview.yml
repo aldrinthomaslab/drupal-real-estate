@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.property.field_contact_number
     - field.field.node.property.field_description
     - field.field.node.property.field_gallery_image
-    - field.field.node.property.field_is_featured
     - field.field.node.property.field_listing_price
     - field.field.node.property.field_location
     - field.field.node.property.field_property_address
@@ -92,6 +91,5 @@ hidden:
   field_banner_image: true
   field_contact_number: true
   field_gallery_image: true
-  field_is_featured: true
   field_location: true
   links: true

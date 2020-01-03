@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.property.field_contact_number
     - field.field.node.property.field_description
     - field.field.node.property.field_gallery_image
-    - field.field.node.property.field_is_featured
     - field.field.node.property.field_listing_price
     - field.field.node.property.field_location
     - field.field.node.property.field_property_address
@@ -75,13 +74,6 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-    region: content
-  field_is_featured:
-    weight: 15
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
     region: content
   field_listing_price:
     weight: 8
