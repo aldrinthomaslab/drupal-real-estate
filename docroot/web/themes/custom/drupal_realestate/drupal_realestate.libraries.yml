@@ -3,3 +3,4 @@ global:
   css:
     base:
       css/style.css: {}
+      css/bootstrap.min.css: {}
