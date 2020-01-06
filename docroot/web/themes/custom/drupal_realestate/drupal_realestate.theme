@@ -1,0 +1,7 @@
+<?php
+use Drupal\file\Entity\File;
+
+function drupal_realestate_preprocess_paragraph__home_header(&$variables) {
+  $media = $variables['elements']['field_home_header_background']['0']['#item']->entity;
+  $variables['background_image'] =  $media->url();
+}
