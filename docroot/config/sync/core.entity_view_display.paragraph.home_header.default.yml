@@ -7,9 +7,11 @@ dependencies:
     - field.field.paragraph.home_header.field_header_subtitle
     - field.field.paragraph.home_header.field_header_title
     - field.field.paragraph.home_header.field_home_header_background
+    - image.style.default_desktop_style
     - paragraphs.paragraphs_type.home_header
   module:
     - block_field
+    - media
 id: paragraph.home_header.default
 targetEntityType: paragraph
 bundle: home_header
@@ -39,12 +41,12 @@ content:
     type: string
     region: content
   field_home_header_background:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     weight: 2
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: default_desktop_style
+      image_link: ''
     third_party_settings: {  }
     region: content
 hidden: {  }

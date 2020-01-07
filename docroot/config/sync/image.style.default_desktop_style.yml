@@ -1,0 +1,15 @@
+uuid: 3d254e42-507a-437e-9d27-aa3a39923ab7
+langcode: en
+status: true
+dependencies: {  }
+name: default_desktop_style
+label: 'Default Desktop Style'
+effects:
+  a3954697-1c83-4880-8840-0a528e5a7315:
+    uuid: a3954697-1c83-4880-8840-0a528e5a7315
+    id: image_scale
+    weight: 1
+    data:
+      width: 1905
+      height: null
+      upscale: true

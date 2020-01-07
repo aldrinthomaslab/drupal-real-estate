@@ -14,7 +14,7 @@ mode: default
 content:
   field_popular_properties_block:
     weight: 0
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: block_field
