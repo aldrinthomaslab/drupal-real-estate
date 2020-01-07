@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.property.field_property_listing_type
     - node.type.property
   module:
+    - media
     - text
     - user
 id: node.property.preview
@@ -24,6 +25,15 @@ targetEntityType: node
 bundle: property
 mode: preview
 content:
+  field_banner_image:
+    type: media_thumbnail
+    weight: 7
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   field_bathroom_quantity:
     weight: 5
     label: hidden
@@ -88,7 +98,6 @@ content:
     type: entity_reference_label
     region: content
 hidden:
-  field_banner_image: true
   field_contact_number: true
   field_gallery_image: true
   field_location: true

@@ -55,12 +55,12 @@ display:
       style:
         type: grid
         options:
-          grouping: {  }
+          uses_fields: false
           columns: 3
           automatic_width: true
           alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
+          col_class_default: false
+          col_class_custom: popular-property-item
           row_class_default: true
           row_class_custom: ''
       row:
