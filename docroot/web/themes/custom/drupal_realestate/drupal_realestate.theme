@@ -5,3 +5,10 @@ function drupal_realestate_preprocess_paragraph__home_header(&$variables) {
   $media = $variables['elements']['field_home_header_background']['0']['#item']->entity;
   $variables['background_image'] =  $media->url();
 }
+
+function drupal_realestate_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  // kint($variables);
+  if (!empty($variables['elements']['content']['#name']) && $variables['elements']['content']['#name'] === 'popular_properties') {
+    $suggestions[] = 'block__views_block__popular_properties';
+  }
+}
