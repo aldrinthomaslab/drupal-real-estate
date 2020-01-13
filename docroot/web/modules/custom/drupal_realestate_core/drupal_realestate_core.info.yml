@@ -1,0 +1,6 @@
+name: Drupal Real Estate Core
+type: module
+description: 'Contains core functionalities and modifications for the application.'
+package: Druapl Real Estate
+core: '8.x'
+version: 1.0
