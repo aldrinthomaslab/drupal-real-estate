@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "506d757cb095a2bfcf985cbf702711db",
+    "content-hash": "896faebbe3305076f5142e5517504e84",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2945,6 +2945,57 @@
             "homepage": "https://www.drupal.org/project/paragraphs",
             "support": {
                 "source": "https://git.drupalcode.org/project/paragraphs"
+            }
+        },
+        {
+            "name": "drupal/taxonomy_machine_name",
+            "version": "1.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/taxonomy_machine_name.git",
+                "reference": "8.x-1.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_machine_name-8.x-1.0-beta4.zip",
+                "reference": "8.x-1.0-beta4",
+                "shasum": "85a62aaa0f1bb64a33e1ba41a63d86e98c173fa1"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta4",
+                    "datestamp": "1559851385",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien @Actualys",
+                    "homepage": "https://www.drupal.org/user/380104"
+                },
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                }
+            ],
+            "description": "Provides a new property to store machine name for taxonomy terms.",
+            "homepage": "https://www.drupal.org/project/taxonomy_machine_name",
+            "support": {
+                "source": "https://git.drupalcode.org/project/taxonomy_machine_name"
             }
         },
         {
