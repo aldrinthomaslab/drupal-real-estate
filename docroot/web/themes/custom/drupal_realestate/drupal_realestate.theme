@@ -1,4 +1,5 @@
 <?php
+use Drupal\drupal_realestate_core\Constants\Property;
 
 function drupal_realestate_preprocess_paragraph__home_header(&$variables) {
   $media = $variables['elements']['field_home_header_background']['0']['#item']->entity;
@@ -8,5 +9,69 @@ function drupal_realestate_preprocess_paragraph__home_header(&$variables) {
 function drupal_realestate_theme_suggestions_block_alter(array &$suggestions, array $variables) {
   if (!empty($variables['elements']['content']['#name']) && $variables['elements']['content']['#name'] === 'popular_properties') {
     $suggestions[] = 'block__views_block__popular_properties';
+  }
+}
+
+function drupal_realestate_preprocess_node__property(&$variables) {
+  // Add base path to Property Content Type variables.
+  $variables['base_path'] = base_path();
+
+  $property_node = $variables['node'];
+
+  // Format Bed, Bathroom, Price and, Area values
+  // Area
+  $variables['property_area'] = $property_node->get('field_property_area')->value;
+  $variables['property_area'] .= ' Sqft';
+
+  // Bed Quantity
+  $variables['bed_quantity'] = $property_node->get('field_bed_quantity')->value;
+
+  if ($variables['bed_quantity'] > 1) {
+    $variables['bed_quantity'] .= ' Beds';
+  } else {
+    $variables['bed_quantity'] .= ' Bed';
+  }
+
+  // Bathroom Quantity
+  $variables['bathroom_quantity'] = $property_node->get('field_bathroom_quantity')->value;
+
+  if ($variables['bathroom_quantity'] > 1) {
+    $variables['bathroom_quantity'] .= ' Baths';
+  } else {
+    $variables['bathroom_quantity'] .= ' Bath';
+  }
+
+  $listing_type = $property_node->get('field_property_listing_type')
+                                ->entity
+                                ->get('machine_name')
+                                ->value;
+  $variables['property_price'] = '$' . abbreviatePrice($property_node->get('field_listing_price')->value);
+
+  if ($listing_type === Property::PROPERTY_TYPE_RENT) {
+    $variables['property_price'] .= '/month';
+    $variables['label_classes'] = 'property_tag red';
+    $variables['label_text'] = 'For Rent';
+  } else {
+    $variables['property_price'] = 'From ' . $variables['property_price'];
+    $variables['label_classes'] = 'property_tag';
+    $variables['label_text'] = 'For Sale';
+  }
+}
+
+function abbreviatePrice($price_value) {
+  $value = floatval($price_value);
+
+  if ($value < 1000) {
+    return $value;
+  }
+
+  $abbr_suffix = [ 'k', 'm' ];
+
+  for ($abbr_iteration = 0; $abbr_iteration < 2; $abbr_iteration++) {
+    $value = (float)($value/1000);
+
+    if ($value < 1000) {
+      return $value . $abbr_suffix[$abbr_iteration];
+    }
   }
 }

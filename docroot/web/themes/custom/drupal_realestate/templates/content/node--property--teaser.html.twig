@@ -1,0 +1,42 @@
+<div{{ attributes.addClass('single_property') }}>
+  <div class="property_thumb">
+    <div class="{{ label_classes }}">{{ label_text }}</div>
+    {{ elements.field_banner_image }}
+  </div>
+  <div class="property_content">
+    <div class="main_pro">
+      <h3>
+        <a href="#">{{ label }}</a>
+      </h3>
+      <div class="mark_pro">
+        <img src="{{ base_path ~ directory }}/images/location.svg"/>
+        <span>Popular Properties</span>
+      </div>
+      <span class="amount">
+        {{ property_price }}
+      </span>
+    </div>
+  </div>
+  <div class="footer_pro">
+    <ul>
+      <li>
+        <div class="single_info_doc">
+          <img src="{{ base_path ~ directory }}/images/square.svg" alt="area" />
+          <span>{{ property_area }}</span>
+        </div>
+      </li>
+      <li>
+        <div class="single_info_doc">
+          <img src="{{ base_path ~ directory }}/images/bed.svg" alt="bed" />
+          <span>{{ bed_quantity }}</span>
+        </div>
+      </li>
+      <li>
+        <div class="single_info_doc">
+          <img src="{{ base_path ~ directory }}/images/bath.svg" alt="bath" />
+          <span>{{ bathroom_quantity }}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

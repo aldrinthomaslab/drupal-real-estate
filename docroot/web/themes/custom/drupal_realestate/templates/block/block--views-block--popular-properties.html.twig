@@ -8,12 +8,10 @@
       </div>
     </div>
     <div class="row">
-      {% for property_row in elements.content.view_build['#rows'] %}
-        {% for property in property_row['#rows'] %}
-          <div class="col-xl-4 col-md-6 col-lg-4">
-            {{ property }}
-          </div>
-        {% endfor %}
+      {% for property in elements.content.view_build['#rows'][0]['#rows'] %}
+        <div class="col-xl-4 col-md-6 col-lg-4">
+          {{ property }}
+        </div>
       {% endfor %}
     </div>
     <div class="row">
