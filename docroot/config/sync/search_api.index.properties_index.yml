@@ -1,0 +1,89 @@
+uuid: e61e3a33-8bb4-4395-a2de-68005ed2fcd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_listing_price
+    - field.storage.node.field_location
+    - field.storage.node.field_bathroom_quantity
+    - field.storage.node.field_bed_quantity
+    - field.storage.node.field_property_listing_type
+    - search_api.server.elasticsearch_server
+  module:
+    - search_api
+    - node
+id: properties_index
+name: 'Properties Index'
+description: ''
+read_only: false
+field_settings:
+  field_bathroom_quantity:
+    label: 'Number of Bathrooms'
+    datasource_id: 'entity:node'
+    property_path: field_bathroom_quantity
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_bathroom_quantity
+  field_bathroom_quantity_1:
+    label: 'Number of Bathrooms'
+    datasource_id: 'entity:node'
+    property_path: field_bathroom_quantity
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_bathroom_quantity
+  field_bed_quantity:
+    label: 'Number of Beds'
+    datasource_id: 'entity:node'
+    property_path: field_bed_quantity
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_bed_quantity
+  field_listing_price:
+    label: 'Listing Price'
+    datasource_id: 'entity:node'
+    property_path: field_listing_price
+    type: decimal
+    dependencies:
+      config:
+        - field.storage.node.field_listing_price
+  field_location:
+    label: Location
+    datasource_id: 'entity:node'
+    property_path: field_location
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_location
+  field_property_listing_type:
+    label: 'Property Listing Type'
+    datasource_id: 'entity:node'
+    property_path: field_property_listing_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_property_listing_type
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - property
+    languages:
+      default: false
+      selected:
+        - en
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: elasticsearch_server
