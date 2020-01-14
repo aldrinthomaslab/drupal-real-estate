@@ -50,13 +50,19 @@ services:
       - "traefik.http.routers.${PROJECT_NAME}_nginx.rule=Host(`${PROJECT_BASE_URL}`)"
 
   elasticsearch:
-   image: wodby/elasticsearch:$ELASTICSEARCH_TAG
-   environment:
-     ES_JAVA_OPTS: "-Xms500m -Xmx500m"
-   ulimits:
-     memlock:
-       soft: -1
-       hard: -1
+    image: wodby/elasticsearch:$ELASTICSEARCH_TAG
+    environment:
+      ES_JAVA_OPTS: "-Xms500m -Xmx500m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata1:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - esnet
 
   portainer:
     image: portainer/portainer
@@ -76,3 +82,9 @@ services:
 #      - '8080:8080' # Dashboard
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+volumes:
+  esdata1:
+    driver: local
+
+networks:
+  esnet:
