@@ -1,0 +1,14 @@
+uuid: fa54cacf-3fb2-44ab-941a-8477abde3e1d
+langcode: en
+status: '1'
+dependencies: {  }
+cluster_id: drupal_realestate_elasticsearch
+name: 'Drupal Realestate Elasticsearch'
+url: 'http://10.64.0.74:9200'
+options:
+  multiple_nodes_connection: false
+  use_authentication: 0
+  authentication_type: Basic
+  username: ''
+  password: ''
+  timeout: '3'
