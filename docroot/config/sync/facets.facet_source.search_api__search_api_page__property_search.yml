@@ -1,0 +1,9 @@
+uuid: db59640b-4766-4b23-abe9-ba8260acb57e
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__search_api_page__property_search
+name: 'search_api:search_api_page__property_search'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

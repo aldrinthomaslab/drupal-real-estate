@@ -25,14 +25,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_bathroom_quantity
-  field_bathroom_quantity_1:
-    label: 'Number of Bathrooms'
-    datasource_id: 'entity:node'
-    property_path: field_bathroom_quantity
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_bathroom_quantity
   field_bed_quantity:
     label: 'Number of Beds'
     datasource_id: 'entity:node'

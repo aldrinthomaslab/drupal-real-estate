@@ -1,0 +1,22 @@
+uuid: 64bcd33d-bb36-4742-a30b-b05ebb27d710
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.properties_index
+id: property_search
+label: 'Property Search'
+path: search
+clean_url: true
+show_all_when_no_keys: true
+index: properties_index
+limit: 10
+searched_fields: {  }
+style: view_modes
+view_mode_configuration:
+  'entity:node':
+    default: teaser
+    overrides:
+      property: ''
+show_search_form: true
+parse_mode: direct

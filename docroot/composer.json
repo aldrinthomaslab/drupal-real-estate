@@ -25,10 +25,12 @@
         "drupal/devel": "^2.1",
         "drupal/elasticsearch_connector": "^7.0",
         "drupal/entity_reference_revisions": "^1.7",
+        "drupal/facets": "^1.4",
         "drupal/geolocation": "^3.0",
         "drupal/onlyone": "^1.9",
         "drupal/paragraphs": "^1.10",
         "drupal/search_api": "^1.15",
+        "drupal/search_api_page": "^1.0",
         "drupal/taxonomy_machine_name": "^1.0",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "vlucas/phpdotenv": "^4.0",
@@ -70,6 +72,11 @@
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
+        },
+        "patches" : {
+          "drupal/core": {
+            "PHP serialize bug": "https://www.drupal.org/files/issues/2019-04-19/3036623-serialize-core.patch"
+          }
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
