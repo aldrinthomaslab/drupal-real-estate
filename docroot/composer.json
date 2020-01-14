@@ -23,6 +23,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
         "drupal/devel": "^2.1",
+        "drupal/elasticsearch_connector": "^7.0",
         "drupal/entity_reference_revisions": "^1.7",
         "drupal/geolocation": "^3.0",
         "drupal/onlyone": "^1.9",
