@@ -3,4 +3,22 @@ global:
   css:
     base:
       css/bootstrap.min.css: {}
+      css/nice-select.css: {}
       css/style.css: {}
+
+  js:
+    js/jquery.form.js: {}
+    js/jquery.ajaxchimp.min.js: {}
+    js/jquery.slicknav.min.js: {}
+    js/jquery.magnific-popup.min.js: {}
+    js/jquery.counterup.min.js: {}
+    js/jquery.validate.min.js: {}
+    js/jquery.scrollUp.min.js: {}
+    js/owl.carousel.min.js: {}
+    js/imagesloaded.pkgd.min.js: {}
+    js/wow.min.js: {}
+    js/scrollIt.js: {}
+    js/slick.min.js: {}
+    js/isotope.pkgd.min.js: {}
+    js/nice-select.min.js: {}
+    js/main.js: {}
