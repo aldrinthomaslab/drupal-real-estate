@@ -2,11 +2,13 @@ global:
   version: VERSION
   css:
     base:
+      https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css: {}
       css/bootstrap.min.css: {}
       css/nice-select.css: {}
       css/style.css: {}
 
   js:
+    https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js: {}
     js/jquery.form.js: {}
     js/jquery.ajaxchimp.min.js: {}
     js/jquery.slicknav.min.js: {}
@@ -22,3 +24,4 @@ global:
     js/isotope.pkgd.min.js: {}
     js/nice-select.min.js: {}
     js/main.js: {}
+    js/custom-slider.js: {}
