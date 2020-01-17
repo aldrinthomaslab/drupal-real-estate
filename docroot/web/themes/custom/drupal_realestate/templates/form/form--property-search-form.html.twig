@@ -1,0 +1,29 @@
+<form{{ attributes }}>
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="form_wrap d-flex">
+        <div class="single-field max_width ">
+          {{ element.location }}
+        </div>
+        <div class="single-field max_width ">
+          {{ element.property_type }}
+        </div>
+        <div class="single_field range_slider">
+          <label>Price ($)</label>
+          <div id="slider" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"></div>
+        </div>
+        <div class="single-field min_width ">
+          {{ element.bed_room }}
+        </div>
+        <div class="single-field min_width ">
+          {{ element.bath_room }}
+        </div>
+        <div class="serach_icon">
+          <a href="#">
+            <i class="ti-search"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
