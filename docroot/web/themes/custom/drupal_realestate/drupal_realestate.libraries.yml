@@ -3,8 +3,15 @@ global:
   css:
     base:
       https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css: {}
+      css/flaticon.css: {}
+      css/themify-icons.css: {}
       css/bootstrap.min.css: {}
+      css/slicknav.css: {}
+      css/slick.css: {}
+      css/owl.carousel.min.css: {}
+      css/magnific-popup.css: {}
       css/nice-select.css: {}
+      css/theme-default.css: {}
       css/style.css: {}
 
   js:
