@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.property.field_property_listing_type
     - node.type.property
   module:
+    - address
     - geolocation
     - media_library
     - path
@@ -89,12 +90,10 @@ content:
     type: geolocation_latlng
     region: content
   field_property_address:
-    weight: 26
-    settings:
-      rows: 5
-      placeholder: ''
+    weight: 29
+    settings: {  }
     third_party_settings: {  }
-    type: string_textarea
+    type: address_default
     region: content
   field_property_area:
     weight: 12

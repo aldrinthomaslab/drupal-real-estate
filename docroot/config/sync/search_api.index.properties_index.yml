@@ -4,9 +4,9 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_listing_price
-    - field.storage.node.field_location
     - field.storage.node.field_bathroom_quantity
     - field.storage.node.field_bed_quantity
+    - field.storage.node.field_property_address
     - field.storage.node.field_property_listing_type
     - search_api.server.elasticsearch_server
   module:
@@ -41,14 +41,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_listing_price
-  field_location:
-    label: Location
+  field_property_address_state:
+    label: 'Property Address » The top-level administrative subdivision of the country.'
     datasource_id: 'entity:node'
-    property_path: field_location
+    property_path: 'field_property_address:administrative_area'
     type: string
     dependencies:
       config:
-        - field.storage.node.field_location
+        - field.storage.node.field_property_address
   field_property_listing_type:
     label: 'Property Listing Type'
     datasource_id: 'entity:node'

@@ -1,4 +1,5 @@
 module:
+  address: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -20,6 +21,7 @@ module:
   elasticsearch_connector: 0
   entity_reference_revisions: 0
   facets: 0
+  facets_range_widget: 0
   field: 0
   field_ui: 0
   file: 0
@@ -45,6 +47,7 @@ module:
   search: 0
   search_api: 0
   search_api_page: 0
+  search_facet: 0
   shortcut: 0
   system: 0
   taxonomy: 0

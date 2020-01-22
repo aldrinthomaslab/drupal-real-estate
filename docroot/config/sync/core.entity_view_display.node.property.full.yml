@@ -86,13 +86,6 @@ content:
     third_party_settings: {  }
     type: geolocation_latlng
     region: content
-  field_property_address:
-    weight: 110
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
   field_property_area:
     weight: 106
     label: above
@@ -119,3 +112,5 @@ content:
     third_party_settings: {  }
 hidden:
   field_contact_number: true
+  field_property_address: true
+  search_api_excerpt: true
