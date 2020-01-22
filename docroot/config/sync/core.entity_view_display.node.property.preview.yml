@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.property.field_property_address
     - field.field.node.property.field_property_area
     - field.field.node.property.field_property_listing_type
+    - field.field.node.property.field_property_type
     - node.type.property
   module:
     - media
@@ -95,5 +96,6 @@ hidden:
   field_gallery_image: true
   field_location: true
   field_property_address: true
+  field_property_type: true
   links: true
   search_api_excerpt: true

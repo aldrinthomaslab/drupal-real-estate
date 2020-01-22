@@ -1,0 +1,8 @@
+uuid: 771864c1-c157-415a-babf-e2d53753f003
+langcode: en
+status: true
+dependencies: {  }
+name: 'Property Type'
+vid: property_type
+description: ''
+weight: 0

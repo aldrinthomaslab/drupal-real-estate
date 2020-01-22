@@ -1,4 +1,4 @@
-uuid: 32283a3b-624a-4740-874f-4941b06305b0
+uuid: d013d42d-37dc-4cf5-ad79-93f581ed68e7
 langcode: en
 status: true
 dependencies:
@@ -6,19 +6,19 @@ dependencies:
     - search_api.index.properties_index
   module:
     - search_api_page
-id: property_listing_type
-name: 'Property Listing Type'
-url_alias: property_listing_type
+id: property_type
+name: 'Property Type'
+url_alias: property_type
 weight: 0
 min_count: 1
-show_only_one_result: true
-field_identifier: field_property_listing_type
+show_only_one_result: false
+field_identifier: field_property_type
 facet_source_id: 'search_api:search_api_page__property_search'
 widget:
   type: dropdown
   config:
     show_numbers: false
-    default_option_label: Choose
+    default_option_label: 'Property Type'
 query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
