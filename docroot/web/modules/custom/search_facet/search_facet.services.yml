@@ -1,0 +1,4 @@
+services:
+  search_facet.facet_field_helper:
+    class: \Drupal\search_facet\SearchFacets
+    arguments: ['@entity_type.manager', '@request_stack', '@plugin.manager.search_api.parse_mode']

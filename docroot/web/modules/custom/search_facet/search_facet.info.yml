@@ -1,0 +1,6 @@
+name: Search Facet
+type: module
+description: 'A supplementary module to help developers integrate search facets to any part of a drupal website.'
+package: Search Facet
+core: '8.x'
+version: 1.0
