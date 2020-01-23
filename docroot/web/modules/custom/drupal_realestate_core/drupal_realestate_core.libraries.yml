@@ -1,0 +1,8 @@
+field_components:
+  css:
+    component:
+      css/form-components.css: {}
+
+  js:
+    js/range-slider.js: {}
+    js/property-form-search.js: {}

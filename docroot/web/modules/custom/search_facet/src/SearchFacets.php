@@ -33,8 +33,7 @@ class SearchFacets {
     $result = $query->execute();
 
     $facets = $result->getAllExtraData();
-    // kint($facets['search_api_facets']);
-    // exit();
+    
     return $this->formatFacetData($facets['search_api_facets'], $after_format_callbacks);
   }
 
