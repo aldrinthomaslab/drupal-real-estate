@@ -1,0 +1,21 @@
+uuid: 08e32d3e-f141-443b-aa72-c3ddc67f24b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.property_form
+    - field.storage.block_content.field_title
+  module:
+    - text
+id: block_content.property_form.field_title
+field_name: field_title
+entity_type: block_content
+bundle: property_form
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

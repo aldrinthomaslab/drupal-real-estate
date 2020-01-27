@@ -1,0 +1,26 @@
+uuid: 7107d7bd-f670-44d3-853f-7028d2ef4775
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.property_form
+    - field.storage.block_content.field_search_form
+  module:
+    - block_field
+id: block_content.property_form.field_search_form
+field_name: field_search_form
+entity_type: block_content
+bundle: property_form
+label: 'Search Form'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    plugin_id: drupal_realestate_searchform_block
+    settings: {  }
+default_value_callback: ''
+settings:
+  plugin_ids:
+    drupal_realestate_searchform_block: drupal_realestate_searchform_block
+field_type: block_field

@@ -1,0 +1,51 @@
+uuid: d1b2938e-9dd0-47d3-a7ef-4300c8e3fb37
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.property_form
+    - field.field.block_content.property_form.field_background_image
+    - field.field.block_content.property_form.field_search_form
+    - field.field.block_content.property_form.field_title
+  module:
+    - block_field
+    - media_library
+    - text
+id: block_content.property_form.default
+targetEntityType: block_content
+bundle: property_form
+mode: default
+content:
+  field_background_image:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_search_form:
+    weight: 3
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -15,8 +15,8 @@ searched_fields: {  }
 style: view_modes
 view_mode_configuration:
   'entity:node':
-    default: teaser
+    default: default
     overrides:
-      property: ''
+      property: teaser
 show_search_form: true
 parse_mode: direct
