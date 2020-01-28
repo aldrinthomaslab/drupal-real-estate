@@ -25,7 +25,6 @@
 
     // End url
     // // slider call
-    console.log($('#slider'));
     $('#slider').slider({
         range: true,
         min: min_value,
