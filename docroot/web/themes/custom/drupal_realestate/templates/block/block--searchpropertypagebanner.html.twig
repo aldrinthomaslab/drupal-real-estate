@@ -1,0 +1,23 @@
+<div{{ attributes.addClass('slider_area') }}>
+  <div
+    class="single_slider single_slider2  d-flex align-items-center property_bg overlay2"
+    style="
+      background-image:url({{ background_image }});
+    "
+  >
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-10 offset-xl-1">
+          <div class="property_wrap">
+            <div class="slider_text text-center justify-content-center">
+              <h3>{{ elements.content.field_title }}</h3>
+            </div>
+            <div class="property_form">
+              {{ elements.content.field_search_form }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
