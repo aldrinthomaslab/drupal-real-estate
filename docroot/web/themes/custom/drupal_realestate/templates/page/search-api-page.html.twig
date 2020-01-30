@@ -10,24 +10,28 @@
       </div>
     </div>
     <div class="row">
-      {{ no_results_found }}
-
-      {{ search_help }}
-
       {% if results %}
         {% for property in results %}
           <div class="col-xl-4 col-md-6 col-lg-4">
             {{ property }}
           </div>
         {% endfor %}
+      {% else %}
+        <div class="col-xl-12">
+          <div class="section_title mb-40 text-center">
+            <h4>No Matching Properties Found</h4>
+          </div>
+        </div>
       {% endif %}
     </div>
-    <div class="row">
-      <div class="col-xl-12">
-        <div class="more_property_btn text-center">
-          <a class="boxed-btn3-line" href="#">More Properties</a>
+    {% if results %}
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="more_property_btn text-center">
+            <a class="boxed-btn3-line" href="#">More Properties</a>
+          </div>
         </div>
       </div>
-    </div>
+    {% endif %}
   </div>
 </div>
