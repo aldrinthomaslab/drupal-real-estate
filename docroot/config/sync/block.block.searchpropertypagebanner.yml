@@ -1,23 +1,23 @@
-uuid: 52f39d72-2425-45df-8634-e0f0484a69db
+uuid: e73a26b6-8193-4bfb-b069-ac381cfb0cb0
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:property_form:a09deb01-fab6-4141-95e3-dd7c42fcf572'
+    - 'block_content:property_form:f346886d-9afb-4ef1-8338-1a8c8c0f1eba'
   module:
     - block_content
     - system
   theme:
     - drupal_realestate
-id: searchpropertybanner
+id: searchpropertypagebanner
 theme: drupal_realestate
 region: content
 weight: -4
 provider: null
-plugin: 'block_content:a09deb01-fab6-4141-95e3-dd7c42fcf572'
+plugin: 'block_content:f346886d-9afb-4ef1-8338-1a8c8c0f1eba'
 settings:
-  id: 'block_content:a09deb01-fab6-4141-95e3-dd7c42fcf572'
-  label: 'Search Property Banner'
+  id: 'block_content:f346886d-9afb-4ef1-8338-1a8c8c0f1eba'
+  label: 'Search Property Page Banner'
   provider: block_content
   label_display: '0'
   status: true
