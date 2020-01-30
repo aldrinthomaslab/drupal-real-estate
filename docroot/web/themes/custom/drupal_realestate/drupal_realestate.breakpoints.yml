@@ -1,0 +1,18 @@
+drupal_realestate.mobile:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+drupal_realestate.tablet:
+  label: tablet
+  mediaQuery: 'all and (min-width: 768px) and (max-width: 991px)'
+  weight: 1
+  multipliers:
+    - 1x
+drupal_realestate.desktop:
+  label: desktop
+  mediaQuery: 'all and (min-width: 992)'
+  weight: 2
+  multipliers:
+    - 1x

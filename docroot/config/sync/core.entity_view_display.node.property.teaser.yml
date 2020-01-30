@@ -18,7 +18,6 @@ dependencies:
     - field.field.node.property.field_property_type
     - node.type.property
   module:
-    - media
     - user
 id: node.property.teaser
 targetEntityType: node
@@ -26,13 +25,13 @@ bundle: property
 mode: teaser
 content:
   field_banner_image:
-    type: media_thumbnail
+    type: entity_reference_entity_view
     weight: 0
     region: content
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      view_mode: teaser
+      link: false
     third_party_settings: {  }
   field_bathroom_quantity:
     type: number_integer

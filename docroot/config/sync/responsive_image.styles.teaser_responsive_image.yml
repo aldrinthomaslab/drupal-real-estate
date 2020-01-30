@@ -1,0 +1,30 @@
+uuid: a1f68bbf-b27f-4ece-9bd4-d82a65cb44e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.teaser_image_style_desktop
+    - image.style.teaser_image_style_mobile
+    - image.style.teaser_image_style_tablet
+  theme:
+    - drupal_realestate
+id: teaser_responsive_image
+label: 'Teaser Responsive Image'
+image_style_mappings:
+  -
+    breakpoint_id: drupal_realestate.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: teaser_image_style_desktop
+  -
+    breakpoint_id: drupal_realestate.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: teaser_image_style_tablet
+  -
+    breakpoint_id: drupal_realestate.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: teaser_image_style_mobile
+breakpoint_group: drupal_realestate
+fallback_image_style: '_original image_'

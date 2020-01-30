@@ -74,6 +74,11 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
+        "patches": {
+          "drupal/core": {
+            "Devel dummy numeric value patch": "./patches/devel-generate-price.patch"
+          }
+        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],

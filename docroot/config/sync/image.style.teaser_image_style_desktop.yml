@@ -1,0 +1,15 @@
+uuid: 4a92a953-1d9f-4238-9357-ef06be606851
+langcode: en
+status: true
+dependencies: {  }
+name: teaser_image_style_desktop
+label: 'Teaser Image Style: Desktop'
+effects:
+  5db60aaa-f2b5-4254-8c63-7683840eab47:
+    uuid: 5db60aaa-f2b5-4254-8c63-7683840eab47
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 232
+      anchor: center-center

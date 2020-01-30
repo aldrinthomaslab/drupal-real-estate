@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "27d477cb8e739cbe1f058f8e3ecce17b",
+    "content-hash": "d52e6b99aec544851e02c3bbaf39eae3",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2686,6 +2686,9 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
+                },
+                "patches_applied": {
+                    "Devel dummy numeric value patch": "./patches/devel-generate-price.patch"
                 }
             },
             "autoload": {
@@ -4037,6 +4040,7 @@
                 }
             ],
             "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
+            "abandoned": true,
             "time": "2018-07-31T13:22:33+00:00"
         },
         {
@@ -4087,6 +4091,7 @@
                 "Guzzle",
                 "stream"
             ],
+            "abandoned": true,
             "time": "2014-10-12T19:18:40+00:00"
         },
         {

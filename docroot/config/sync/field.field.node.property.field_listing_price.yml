@@ -15,11 +15,11 @@ required: true
 translatable: false
 default_value:
   -
-    value: !!float 0
+    value: !!float 1000
 default_value_callback: ''
 settings:
-  min: null
-  max: null
+  min: !!float 200
+  max: !!float 100000
   prefix: ''
   suffix: ''
 field_type: float

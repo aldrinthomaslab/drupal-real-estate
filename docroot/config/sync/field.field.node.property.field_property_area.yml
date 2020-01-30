@@ -16,8 +16,8 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  min: null
-  max: null
+  min: !!float 30
+  max: !!float 100
   prefix: ''
   suffix: ''
 field_type: float

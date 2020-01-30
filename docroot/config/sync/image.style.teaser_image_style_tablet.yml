@@ -1,0 +1,15 @@
+uuid: 532cd49b-df1b-496e-b51b-5ae428037dc1
+langcode: en
+status: true
+dependencies: {  }
+name: teaser_image_style_tablet
+label: 'Teaser Image Style: Tablet'
+effects:
+  898fea7d-73ad-4547-805e-df138c736c74:
+    uuid: 898fea7d-73ad-4547-805e-df138c736c74
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 330
+      height: 219
+      anchor: center-center
