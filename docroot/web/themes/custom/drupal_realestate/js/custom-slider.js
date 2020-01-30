@@ -23,6 +23,10 @@
     var min_value = parseInt($('.property-search-price-min').val());
     var max_value = parseInt($('.property-search-price-max').val())
 
+    var current_min_value = parseInt($('.property-search-price-min-val').val());
+    var current_max_value = parseInt($('.property-search-price-max-val').val());
+    console.log(current_min_value);
+    console.log(current_max_value);
     // End url
     // // slider call
     $('#slider').slider({
@@ -30,10 +34,10 @@
         min: min_value,
         max: max_value,
         step: 1,
-        values: [min_value, max_value],
+        values: [current_min_value, current_max_value],
         slide: function (event, ui) {
-          $('.property-search-price-min').val(ui.values[0]);
-          $('.property-search-price-max').val(ui.values[1]);
+          $('.property-search-price-min-val').val(ui.values[0]);
+          $('.property-search-price-max-val').val(ui.values[1]);
 
           var new_min_val = abbreviateFormat(ui.values[0]);
           var new_max_val = abbreviateFormat(ui.values[1]);
@@ -80,10 +84,10 @@
     $('.ui-slider-range').append('<span class="price-range-both value"><i>' + $('#slider').slider('values', 0) +
         ' - </i>' + $('#slider').slider('values', 1) + '</span>');
 
-    $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + abbreviateFormat(min_value) +
+    $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + abbreviateFormat(current_min_value) +
         '</span>');
 
-    $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + abbreviateFormat(max_value) +
+    $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + abbreviateFormat(current_max_value) +
         '</span>');
   });
 })(jQuery);
