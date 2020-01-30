@@ -85,7 +85,7 @@ function abbreviatePrice($price_value) {
     $value = (float)($value/1000);
 
     if ($value < 1000) {
-      return $value . $abbr_suffix[$abbr_iteration];
+      return number_format($value, 1) . $abbr_suffix[$abbr_iteration];
     }
   }
 }
