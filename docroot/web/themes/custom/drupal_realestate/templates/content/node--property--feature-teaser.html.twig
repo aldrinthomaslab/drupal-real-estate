@@ -1,0 +1,39 @@
+<div {{ attributes.addClass('single_details') }}>
+  <div class="row">
+    <div class="col-xl-6 col-md-6">
+      <div class="modern_home_info">
+        <div class="modern_home_info_inner">
+          <span class="for_sale">For Sale</span>
+          <div class="info_header">
+            <h3>{{ label }}</h3>
+            <div class="popular_pro d-flex">
+            </div>
+          </div>
+          <div class="info_content">
+            <ul>
+              <li>
+                <img src="{{ base_path ~ directory }}/images/square.svg" alt="area" />
+                <span>{{ property_area }} Sqft</span>
+              </li>
+              <li>
+                <img src="{{ base_path ~ directory }}/images/bed.svg" alt="bed" />
+                <span>{{ bed_quantity }} Bed</span>
+              </li>
+              <li>
+                <img src="{{ base_path ~ directory }}/images/bath.svg" alt="bath" />
+                <span>{{ bathroom_quantity }} Bath</span>
+              </li>
+            </ul>
+            <p>
+              {{ elements.field_description }}
+            </p>
+            <div class="prise_view_details d-flex justify-content-between align-items-center">
+              <span>{{ property_price }}</span>
+              <a class="boxed-btn3-line" href="#">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
