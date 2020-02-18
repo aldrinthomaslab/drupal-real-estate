@@ -3,21 +3,22 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.featured_property.field_featured_properties
+    - field.field.paragraph.featured_property.field_featured_properties_block
     - field.field.paragraph.featured_property.field_section_background
     - paragraphs.paragraphs_type.featured_property
+  module:
+    - block_field
 id: paragraph.featured_property.default
 targetEntityType: paragraph
 bundle: featured_property
 mode: default
 content:
-  field_featured_properties:
+  field_featured_properties_block:
     weight: 1
     label: hidden
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: block_field
     region: content
   field_section_background:
     type: entity_reference_entity_view
@@ -28,4 +29,5 @@ content:
       link: false
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true
