@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.featured_agents.field_featured_agents
+    - field.field.paragraph.featured_agents.field_header_title
     - paragraphs.paragraphs_type.featured_agents
   module:
     - entity_reference_revisions
@@ -21,4 +22,13 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-hidden: {  }
+  field_header_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true
