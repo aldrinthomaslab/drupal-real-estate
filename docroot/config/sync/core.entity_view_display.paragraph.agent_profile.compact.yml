@@ -1,16 +1,17 @@
-uuid: 385f9304-a35a-4ab5-b315-d6857074e267
+uuid: 3482a38f-62c7-4a56-99ce-106e01ddd4b3
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.compact
     - field.field.paragraph.agent_profile.field_agent_title
     - field.field.paragraph.agent_profile.field_name
     - field.field.paragraph.agent_profile.field_profile_image
     - paragraphs.paragraphs_type.agent_profile
-id: paragraph.agent_profile.default
+id: paragraph.agent_profile.compact
 targetEntityType: paragraph
 bundle: agent_profile
-mode: default
+mode: compact
 content:
   field_agent_title:
     weight: 2
@@ -33,7 +34,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: compact
+      view_mode: teaser
       link: false
     third_party_settings: {  }
     region: content

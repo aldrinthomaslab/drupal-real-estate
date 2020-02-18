@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_profile_image
-    - media.type.image
+    - media.type.profile_images
     - paragraphs.paragraphs_type.agent_profile
 id: paragraph.agent_profile.field_profile_image
 field_name: field_profile_image
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      profile_images: profile_images
     sort:
       field: _none
     auto_create: false
