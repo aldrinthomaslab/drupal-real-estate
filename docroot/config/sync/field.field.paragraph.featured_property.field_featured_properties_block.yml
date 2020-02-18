@@ -1,0 +1,22 @@
+uuid: f3f3f35b-08c5-40c5-8623-2716b0d2936b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_featured_properties_block
+    - paragraphs.paragraphs_type.featured_property
+  module:
+    - block_field
+id: paragraph.featured_property.field_featured_properties_block
+field_name: field_featured_properties_block
+entity_type: paragraph
+bundle: featured_property
+label: 'Featured Properties Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids: {  }
+field_type: block_field
