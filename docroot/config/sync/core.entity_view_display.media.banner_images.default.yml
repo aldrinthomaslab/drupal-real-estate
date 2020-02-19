@@ -1,0 +1,30 @@
+uuid: f9785c0e-893f-45b5-bdc1-f9a1d1b23216
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.banner_images.field_media_image_2
+    - image.style.large
+    - media.type.banner_images
+  module:
+    - image
+id: media.banner_images.default
+targetEntityType: media
+bundle: banner_images
+mode: default
+content:
+  field_media_image_2:
+    label: visually_hidden
+    weight: 0
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

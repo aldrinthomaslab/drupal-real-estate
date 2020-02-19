@@ -20,11 +20,15 @@ function drupal_realestate_preprocess_block(&$variables) {
 }
 
 function drupal_realestate_preprocess_paragraph__featured_property(&$variables) {
-  // kint($variables);
   $media = $variables['elements']['field_section_background']['0']['#media'];
-  // kint($media);
-  // $variables['background_image'] = '';
   $variables['background_image'] = file_create_url($media->field_media_image->entity->getFileUri());
+}
+
+function drupal_realestate_preprocess_block__drupal_realestate_internaladbanner(&$variables) {
+  if (!empty($variables['elements']['content']['field_background_image']['0']['#media'])) {
+    $media = $variables['elements']['content']['field_background_image']['0']['#media'];
+    $variables['background_image'] = file_create_url($media->thumbnail->entity->getFileUri());
+  }
 }
 
 function drupal_realestate_theme_suggestions_block_alter(array &$suggestions, array $variables) {
