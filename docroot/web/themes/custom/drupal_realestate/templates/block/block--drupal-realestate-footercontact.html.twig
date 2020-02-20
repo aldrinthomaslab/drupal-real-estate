@@ -1,0 +1,16 @@
+{% extends '@drupal_realestate/block/footer-widget.html.twig' %}
+
+{% block footer_content %}
+  <div class="footer_logo">
+    <a href="#">
+      {{ elements.content.field_logo_image }}
+    </a>
+  </div>
+  <p>
+    <a href="#">{{ elements.content.field_contact_email }}</a>
+    <br />
+    {{ elements.content.field_contact_number }}
+    <br />
+    {{ elements.content.field_contact_address }}
+  </p>
+{% endblock %}
