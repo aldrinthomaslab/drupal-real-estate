@@ -51,20 +51,33 @@
     </aside>
   </div>
 {% endif %}
-<footer class="site-footer">
-  <div class="layout-container">
-    {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-      <div class="site-footer__top clearfix">
-        {{ page.footer_first }}
-        {{ page.footer_second }}
-        {{ page.footer_third }}
-        {{ page.footer_fourth }}
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-md-6 col-lg-3">
+          {{ page.footer_first }}
+        </div>
+        <div class="col-xl-3 col-md-6 col-lg-3">
+          {{ page.footer_second }}
+        </div>
+        <div class="col-xl-3 col-md-6 col-lg-3">
+          {{ page.footer_third }}
+        </div>
+        <div class="col-xl-3 col-md-6 col-lg-3">
+          {{ page.footer_fourth }}
+        </div>
       </div>
-    {% endif %}
-    {% if page.footer_fifth %}
-      <div class="site-footer__bottom">
-        {{ page.footer_fifth }}
+    </div>
+  </div>
+  <div class="copy-right_text">
+    <div class="container">
+      <div class="footer_border"></div>
+      <div class="row">
+        <div class="col-xl-12">
+          {{ page.footer_fifth }}
+        </div>
       </div>
-    {% endif %}
+    </div>
   </div>
 </footer>
