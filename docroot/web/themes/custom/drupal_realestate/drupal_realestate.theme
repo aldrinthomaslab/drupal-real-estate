@@ -1,5 +1,6 @@
 <?php
 use Drupal\drupal_realestate_core\Constants\Property;
+use Drupal\drupal_realestate_core\Helpers\Preprocess;
 use Drupal\Core\Url;
 
 function drupal_realestate_preprocess_image(&$variables) {
@@ -32,13 +33,11 @@ function drupal_realestate_preprocess_block__drupal_realestate_internaladbanner(
 }
 
 function drupal_realestate_theme_suggestions_block_alter(array &$suggestions, array $variables) {
-  if (!empty($variables['elements']['content']['#name']) && $variables['elements']['content']['#name'] === 'popular_properties') {
-    $suggestions[] = 'block__views_block__popular_properties';
-  }
+  $suggestions = Preprocess::addBlockSuggestion($suggestions, $variables, 'popular_properties', 'block__views_block__popular_properties');
 
-  if (!empty($variables['elements']['content']['#name']) && $variables['elements']['content']['#name'] === 'featured_properties') {
-    $suggestions[] = 'block__views_block__featured_properties_block';
-  }
+  $suggestions = Preprocess::addBlockSuggestion($suggestions, $variables, 'featured_properties', 'block__views_block__featured_properties_block');
+
+  $suggestions = Preprocess::addBlockSuggestion($suggestions, $variables, ['drupal_realestate_services', 'drupal_realestate_usefullinks'], 'block__system_menu__footer_menu_links');
 }
 
 function drupal_realestate_theme_suggestions_form_alter(array &$suggestions, array $variables) {
