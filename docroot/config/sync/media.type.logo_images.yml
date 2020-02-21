@@ -1,0 +1,13 @@
+uuid: a9762365-126b-49f2-8929-693266024535
+langcode: en
+status: true
+dependencies: {  }
+id: logo_images
+label: 'Logo Images'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_3
+field_map: {  }

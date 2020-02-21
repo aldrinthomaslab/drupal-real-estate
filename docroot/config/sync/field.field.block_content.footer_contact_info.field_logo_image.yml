@@ -5,7 +5,7 @@ dependencies:
   config:
     - block_content.type.footer_contact_info
     - field.storage.block_content.field_logo_image
-    - media.type.image
+    - media.type.logo_images
 id: block_content.footer_contact_info.field_logo_image
 field_name: field_logo_image
 entity_type: block_content
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      logo_images: logo_images
     sort:
       field: _none
     auto_create: false

@@ -1,0 +1,25 @@
+uuid: bc175fd1-4d3b-42c8-a9bf-69ebfd860733
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:long_text_block:3dd8be88-ee3a-4750-a957-f748be27856e'
+  module:
+    - block_content
+  theme:
+    - drupal_realestate
+id: trademarkfooter
+theme: drupal_realestate
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:3dd8be88-ee3a-4750-a957-f748be27856e'
+settings:
+  id: 'block_content:3dd8be88-ee3a-4750-a957-f748be27856e'
+  label: 'Trademark Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

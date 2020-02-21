@@ -1,0 +1,21 @@
+uuid: 01122bba-d6d0-4b4b-8857-e7cb1f44225a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.long_text_block
+    - field.storage.block_content.field_text_content
+  module:
+    - text
+id: block_content.long_text_block.field_text_content
+field_name: field_text_content
+entity_type: block_content
+bundle: long_text_block
+label: 'Text Content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
