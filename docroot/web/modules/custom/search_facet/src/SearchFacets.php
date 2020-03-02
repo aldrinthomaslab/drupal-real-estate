@@ -24,17 +24,28 @@ class SearchFacets {
    *
    */
   public function getSearchFacets($search_api_page, $after_format_callbacks = []) {
+    $result = $this->getSearchQueryResult($search_api_page, $this->requestStack->getCurrentRequest());
+
+    $facets = $result->getAllExtraData();
+
+    return $this->formatFacetData($facets['search_api_facets'], $after_format_callbacks);
+  }
+
+  /**
+   *
+   */
+  public function getSearchQueryResult($search_api_page, $request, $offset = 0, $length = 10) {
     $external_search_page = new ExternalSearchApiPage($this->parseModeManager);
 
     $search_api_page = $this->getSearchApiPage($search_api_page);
     $request         = $this->requestStack->getCurrentRequest();
 
     $query  = $external_search_page->prepareQueryForExternal($request, $search_api_page);
+    $query->range($offset, $length);
+
     $result = $query->execute();
 
-    $facets = $result->getAllExtraData();
-    
-    return $this->formatFacetData($facets['search_api_facets'], $after_format_callbacks);
+    return $result;
   }
 
   /**
