@@ -35,8 +35,6 @@
       uuid: 9cec1a8f-b169-4e29-91e3-4bc31b087260
       field_popular_properties_block:
         - plugin_id: 'views_block:popular_properties-popular_properties_block'
-          settings:
-            - label_display: False
 
 
     - entity: 'paragraph'
@@ -45,7 +43,7 @@
       field_featured_properties_block:
         - plugin_id: 'views_block:featured_properties-featured_properties'
           settings:
-            - label_display: False
+            label_display: False
       field_section_background:
         - entity: media
           bundle: image
