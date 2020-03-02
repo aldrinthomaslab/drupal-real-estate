@@ -1,0 +1,195 @@
+# # Services Menu Links
+# - entity: "menu_link_content"
+#   title: "Finance Solutions"
+#   menu_name: "services"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/finance-solution"
+#
+# - entity: "menu_link_content"
+#   title: "Startup"
+#   menu_name: "services"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/startup"
+#
+# - entity: "menu_link_content"
+#   title: "Marketing & SEO"
+#   menu_name: "services"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/marketing-seo"
+#
+# - entity: "menu_link_content"
+#   title: "Food"
+#   menu_name: "services"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/food"
+#
+# - entity: "menu_link_content"
+#   title: "Travel"
+#   menu_name: "services"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/travel"
+#
+#
+# # Useful Links Menu
+# - entity: "menu_link_content"
+#   title: "About"
+#   menu_name: "useful-links"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/about"
+#
+# - entity: "menu_link_content"
+#   title: "Appointment"
+#   menu_name: "useful-links"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/appointment"
+#
+# - entity: "menu_link_content"
+#   title: "Blog"
+#   menu_name: "useful-links"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/blog"
+#
+# - entity: "menu_link_content"
+#   title: "Contact"
+#   menu_name: "useful-links"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/contact"
+#
+# # Main menu
+#
+# - entity: "menu_link_content"
+#   title: "Home"
+#   menu_name: "main"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/"
+#
+# - entity: "menu_link_content"
+#   title: "Pages"
+#   menu_name: "main"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/pages"
+#
+# - entity: "menu_link_content"
+#   title: "About"
+#   menu_name: "main"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/about"
+#   parent:
+#     - entity: "menu_link_content"
+#       title: "Pages"
+#       menu_name: "main"
+#
+# - entity: "menu_link_content"
+#   title: "Property Details"
+#   menu_name: "main"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/about"
+#   parent:
+#     - entity: "menu_link_content"
+#       title: "Pages"
+#       menu_name: "main"
+#
+# - entity: "menu_link_content"
+#   title: "Elements"
+#   menu_name: "main"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/elements"
+#   parent:
+#     - entity: "menu_link_content"
+#       title: "Pages"
+#       menu_name: "main"
+#
+# - entity: "menu_link_content"
+#   title: "Property"
+#   menu_name: "main"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/property"
+#
+# - entity: "menu_link_content"
+#   title: "Blog"
+#   menu_name: "main"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/blog"
+#
+# - entity: "menu_link_content"
+#   title: "Blog"
+#   menu_name: "main"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/blog"
+#   parent:
+#     - entity: "menu_link_content"
+#       title: "Blog"
+#       menu_name: "main"
+#
+# - entity: "menu_link_content"
+#   title: "Single Blog"
+#   menu_name: "main"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/single-blog"
+#   parent:
+#     - entity: "menu_link_content"
+#       title: "Blog"
+#       menu_name: "main"
+#
+# - entity: "menu_link_content"
+#   title: "Contact"
+#   menu_name: "main"
+#   weight: 0
+#   # Defaults to enabled if omitted, but can be disabled by setting to 0.
+#   enabled: 1
+#   link:
+#     uri: "internal:/contact"

@@ -1,0 +1,559 @@
+# Property #1
+- entity: "node"
+  type: "property"
+  title: "et netus et"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_banner_image:
+    - entity: media
+      bundle: image
+      name: 'property_1'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'property_1.png'
+          alt: 'Property #1'
+  field_contact_number:
+    value: '1234567890'
+  field_description:
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia at. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Natoque penatibus et magnis dis parturient.</p>
+  field_listing_price:
+    value: 3000
+  field_bathroom_quantity:
+    value: 1
+  field_bed_quantity:
+    value: 2
+  field_property_address:
+    - country_code: US
+      address_line1: tempor orci dapibus ultrices in iaculis nunc
+      address_line2: tempor orci dapibus ultrices in iaculis nunc
+      locality: Auburn
+      administrative_area: AL
+      postal_code: 36879
+  field_property_area:
+    value: 50
+  field_property_listing_type:
+     - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'listing_type'
+            name: 'Purchase'
+  field_property_type:
+    - '#process':
+       callback: 'reference'
+       args:
+         - 'taxonomy_term'
+         - vid: 'property_type'
+           name: 'Apartment'
+
+# Property #2
+- entity: "node"
+  type: "property"
+  title: "justo laoreet sit amet"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_banner_image:
+    - entity: media
+      bundle: image
+      name: 'property_2'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'property_2.png'
+          alt: 'Property #2'
+  field_contact_number:
+    value: '1234567890'
+  field_description:
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia at. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Natoque penatibus et magnis dis parturient.</p>
+  field_listing_price:
+    value: 4000
+  field_bathroom_quantity:
+    value: 2
+  field_bed_quantity:
+    value: 2
+  field_property_address:
+    - country_code: US
+      address_line1: tempor orci dapibus ultrices in iaculis nunc
+      address_line2: tempor orci dapibus ultrices in iaculis nunc
+      locality: Calera
+      administrative_area: AL
+      postal_code: 35040
+  field_property_area:
+    value: 40
+  field_property_listing_type:
+     - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'listing_type'
+            name: 'Rent'
+  field_property_type:
+    - '#process':
+       callback: 'reference'
+       args:
+         - 'taxonomy_term'
+         - vid: 'property_type'
+           name: 'Condominium'
+
+# Property #3
+- entity: "node"
+  type: "property"
+  title: "et magnis dis parturient"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_banner_image:
+    - entity: media
+      bundle: image
+      name: 'property_3'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'property_3.png'
+          alt: 'Property #3'
+  field_contact_number:
+    value: '1234567890'
+  field_description:
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia at. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Natoque penatibus et magnis dis parturient.</p>
+  field_listing_price:
+    value: 10000
+  field_bathroom_quantity:
+    value: 2
+  field_bed_quantity:
+    value: 3
+  field_property_address:
+    - country_code: US
+      address_line1: tempor orci dapibus ultrices in iaculis nunc
+      address_line2: tempor orci dapibus ultrices in iaculis nunc
+      locality: Calera
+      administrative_area: AL
+      postal_code: 35040
+  field_property_area:
+    value: 40
+  field_property_listing_type:
+     - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'listing_type'
+            name: 'Rent'
+  field_property_type:
+    - '#process':
+       callback: 'reference'
+       args:
+         - 'taxonomy_term'
+         - vid: 'property_type'
+           name: 'House'
+
+# Property #4
+- entity: "node"
+  type: "property"
+  title: "elit ullamcorper dignissim cras"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_banner_image:
+    - entity: media
+      bundle: image
+      name: 'property_4'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'property_4.png'
+          alt: 'Property #4'
+  field_contact_number:
+    value: '1234567890'
+  field_description:
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia at. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Natoque penatibus et magnis dis parturient.</p>
+  field_listing_price:
+    value: 7000
+  field_bathroom_quantity:
+    value: 2
+  field_bed_quantity:
+    value: 2
+  field_property_address:
+    - country_code: US
+      address_line1: tempor orci dapibus ultrices in iaculis nunc
+      address_line2: tempor orci dapibus ultrices in iaculis nunc
+      locality: Bedford
+      administrative_area: NY
+      postal_code: 10506
+  field_property_area:
+    value: 40
+  field_property_listing_type:
+     - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'listing_type'
+            name: 'Rent'
+  field_property_type:
+    - '#process':
+       callback: 'reference'
+       args:
+         - 'taxonomy_term'
+         - vid: 'property_type'
+           name: ''
+
+# Property #5
+- entity: "node"
+  type: "property"
+  title: "eget dolor morbi non"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_banner_image:
+    - entity: media
+      bundle: image
+      name: 'property_5'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'property_5.png'
+          alt: 'Property #5'
+  field_contact_number:
+    value: '1234567890'
+  field_description:
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia at. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Natoque penatibus et magnis dis parturient.</p>
+  field_listing_price:
+    value: 5000
+  field_bathroom_quantity:
+    value: 0
+  field_bed_quantity:
+    value: 0
+  field_property_address:
+    - country_code: US
+      address_line1: tempor orci dapibus ultrices in iaculis nunc
+      address_line2: tempor orci dapibus ultrices in iaculis nunc
+      locality: Carnation
+      administrative_area: WA
+      postal_code: 98014
+  field_property_area:
+    value: 70
+  field_property_listing_type:
+     - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'listing_type'
+            name: 'Purchase'
+  field_property_type:
+    - '#process':
+       callback: 'reference'
+       args:
+         - 'taxonomy_term'
+         - vid: 'property_type'
+           name: 'Land'
+
+# Property #6
+- entity: "node"
+  type: "property"
+  title: "lacinia quis vel eros"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_banner_image:
+    - entity: media
+      bundle: image
+      name: 'property_6'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'property_6.png'
+          alt: 'Property #6'
+  field_contact_number:
+    value: '1234567890'
+  field_description:
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia at. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Natoque penatibus et magnis dis parturient.</p>
+  field_listing_price:
+    value: 5000
+  field_bathroom_quantity:
+    value: 1
+  field_bed_quantity:
+    value: 3
+  field_property_address:
+    - country_code: US
+      address_line1: tempor orci dapibus ultrices in iaculis nunc
+      address_line2: tempor orci dapibus ultrices in iaculis nunc
+      locality: Bellevue
+      administrative_area: WA
+      postal_code: 98015
+  field_property_area:
+    value: 70
+  field_property_listing_type:
+     - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'listing_type'
+            name: 'Purchase'
+  field_property_type:
+    - '#process':
+       callback: 'reference'
+       args:
+         - 'taxonomy_term'
+         - vid: 'property_type'
+           name: 'Apartment'
+
+# Property #7
+- entity: "node"
+  type: "property"
+  title: "nunc id cursus metus"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_banner_image:
+    - entity: media
+      bundle: image
+      name: 'property_7'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'property_2.png'
+          alt: 'Property #8'
+  field_contact_number:
+    value: '1234567890'
+  field_description:
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia at. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Natoque penatibus et magnis dis parturient.</p>
+  field_listing_price:
+    value: 124000
+  field_bathroom_quantity:
+    value: 1
+  field_bed_quantity:
+    value: 1
+  field_property_address:
+    - country_code: US
+      address_line1: tempor orci dapibus ultrices in iaculis nunc
+      address_line2: tempor orci dapibus ultrices in iaculis nunc
+      locality: Los Angeles
+      administrative_area: CA
+      postal_code: 90065
+  field_property_area:
+    value: 30
+  field_property_listing_type:
+     - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'listing_type'
+            name: 'Purchase'
+  field_property_type:
+    - '#process':
+       callback: 'reference'
+       args:
+         - 'taxonomy_term'
+         - vid: 'property_type'
+           name: 'Apartment'
+
+# Property #8
+- entity: "node"
+  type: "property"
+  title: "nunc id cursus metus"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_banner_image:
+    - entity: media
+      bundle: image
+      name: 'property_8'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'property_5.png'
+          alt: 'Property #8'
+  field_contact_number:
+    value: '1234567890'
+  field_description:
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia at. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Natoque penatibus et magnis dis parturient.</p>
+  field_listing_price:
+    value: 8000
+  field_bathroom_quantity:
+    value: 1
+  field_bed_quantity:
+    value: 2
+  field_property_address:
+    - country_code: US
+      address_line1: tempor orci dapibus ultrices in iaculis nunc
+      address_line2: tempor orci dapibus ultrices in iaculis nunc
+      locality: Downey
+      administrative_area: CA
+      postal_code: 90240
+  field_property_area:
+    value: 50
+  field_property_listing_type:
+     - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'listing_type'
+            name: 'Rent'
+  field_property_type:
+    - '#process':
+       callback: 'reference'
+       args:
+         - 'taxonomy_term'
+         - vid: 'property_type'
+           name: 'Condomium'
+
+# Property #9
+- entity: "node"
+  type: "property"
+  title: "nunc id cursus metus"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_banner_image:
+    - entity: media
+      bundle: image
+      name: 'property_9'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'property_1.png'
+          alt: 'Property #9'
+  field_contact_number:
+    value: '1234567890'
+  field_description:
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia at. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Natoque penatibus et magnis dis parturient.</p>
+  field_listing_price:
+    value: 300000
+  field_bathroom_quantity:
+    value: 1
+  field_bed_quantity:
+    value: 2
+  field_property_address:
+    - country_code: US
+      address_line1: tempor orci dapibus ultrices in iaculis nunc
+      address_line2: tempor orci dapibus ultrices in iaculis nunc
+      locality: Downey
+      administrative_area: CA
+      postal_code: 90240
+  field_property_area:
+    value: 50
+  field_property_listing_type:
+     - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'listing_type'
+            name: 'Purchase'
+  field_property_type:
+    - '#process':
+       callback: 'reference'
+       args:
+         - 'taxonomy_term'
+         - vid: 'property_type'
+           name: 'House'
+
+# Property #10
+- entity: "node"
+  type: "property"
+  title: "nunc id cursus metus"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_banner_image:
+    - entity: media
+      bundle: image
+      name: 'property_10'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'property_3.png'
+          alt: 'Property #10'
+  field_contact_number:
+    value: '1234567890'
+  field_description:
+    value: |
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus vestibulum sed arcu non odio euismod lacinia at. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. In aliquam sem fringilla ut morbi tincidunt augue interdum velit. Natoque penatibus et magnis dis parturient.</p>
+  field_listing_price:
+    value: 400000
+  field_bathroom_quantity:
+    value: 3
+  field_bed_quantity:
+    value: 3
+  field_property_address:
+    - country_code: US
+      address_line1: tempor orci dapibus ultrices in iaculis nunc
+      address_line2: tempor orci dapibus ultrices in iaculis nunc
+      locality: Kirkwood
+      administrative_area: DE
+      postal_code: 19708
+  field_property_area:
+    value: 800
+  field_property_listing_type:
+     - '#process':
+        callback: 'reference'
+        args:
+          - 'taxonomy_term'
+          - vid: 'listing_type'
+            name: 'Purchase'
+  field_property_type:
+    - '#process':
+       callback: 'reference'
+       args:
+         - 'taxonomy_term'
+         - vid: 'property_type'
+           name: 'Foreclosures'

@@ -1,0 +1,143 @@
+- entity: "node"
+  type: "homepage"
+  title: "Home Page"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  # Rich text fields contain multiple keys that must be provided.
+  field_homepage_components:
+    - entity: 'paragraph'
+      type: 'home_header'
+      uuid: '3aeb12be-9cd5-4281-89d5-8966cf7b7e6f'
+      field_header_title:
+        - value: 'Home header title'
+      field_header_subtitle:
+        - value: 'Header Subtitle'
+      field_header_form:
+        - plugin_id: 'drupal_realestate_searchform_block'
+      field_home_header_background:
+        - entity: media
+          bundle: image
+          name: 'home_header_image'
+          status: 1
+          field_media_image:
+            - '#process':
+                callback: 'file'
+                args:
+                  - 'image'
+                  - type: 'module'
+                    filename: 'banner.png'
+              alt: 'Home Header Background'
+
+    - entity: 'paragraph'
+      type: 'popular_properties'
+      uuid: 9cec1a8f-b169-4e29-91e3-4bc31b087260
+      field_popular_properties_block:
+        - plugin_id: 'views_block:popular_properties-popular_properties_block'
+
+    - entity: 'paragraph'
+      type: 'featured_property'
+      uuid: e842724f-2868-4255-a568-db67aa4411c3
+      field_featured_properties_block:
+        - plugin_id: 'views_block:featured_properties-featured_properties'
+      field_section_background:
+        - entity: media
+          bundle: image
+          name: 'featured_property_image'
+          status: 1
+          field_media_image:
+            - '#process':
+                callback: 'file'
+                args:
+                  - 'image'
+                  - type: 'module'
+                    filename: 'home_details.png'
+              alt: 'Featured Properties Background'
+
+    - entity: 'paragraph'
+      type: 'featured_agents'
+      uuid: 6a92dda4-fa45-4033-94af-13e3e8592c5d
+      field_header_title:
+        - value: 'Our Team'
+      field_featured_agents:
+        - entity: 'paragraph'
+          type: 'agent_profile'
+          uuid: f350105d-f53b-4999-bdab-68c48ee0afb2
+          field_agent_title:
+            - value: 'Field Agent'
+          field_name:
+            - value: 'Field Agent #1'
+          field_profile_image:
+            - entity: media
+              bundle: image
+              name: 'agent_1_profile_image'
+              status: 1
+              field_media_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'agent_1.png'
+                  alt: 'Agent #1'
+        - entity: 'paragraph'
+          type: 'agent_profile'
+          uuid: 672c1837-a54d-40f0-8865-41e9a369ebb2
+          field_agent_title:
+            - value: 'Field Agent'
+          field_name:
+            - value: 'Field Agent #2'
+          field_profile_image:
+            - entity: media
+              bundle: image
+              name: 'agent_2_profile_image'
+              status: 1
+              field_media_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'agent_2.png'
+                  alt: 'Agent #2'
+        - entity: 'paragraph'
+          type: 'agent_profile'
+          uuid: f94cddb8-c0c0-4a33-a37d-16948dc2c4ee
+          field_agent_title:
+            - value: 'Field Agent'
+          field_name:
+            - value: 'Field Agent #3'
+          field_profile_image:
+            - entity: media
+              bundle: image
+              name: 'agent_3_profile_image'
+              status: 1
+              field_media_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'agent_3.png'
+                  alt: 'Agent #3'
+        - entity: 'paragraph'
+          type: 'agent_profile'
+          uuid: da3c388f-f51c-4178-99a2-567a7002a52c
+          field_agent_title:
+            - value: 'Field Agent'
+          field_name:
+            - value: 'Field Agent #4'
+          field_profile_image:
+            - entity: media
+              bundle: image
+              name: 'agent_4_profile_image'
+              status: 1
+              field_media_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'agent_4.png'
+                  alt: 'Agent #4'

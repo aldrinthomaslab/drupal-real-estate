@@ -1,0 +1,48 @@
+# # Taxonomy terms
+#
+# # Listing Type
+# - entity: "taxonomy_term"
+#   vid: "listing_type"
+#   name: "Purchase"
+#
+# - entity: "taxonomy_term"
+#   vid: "listing_type"
+#   name: "Rent"
+#
+# #Property Type
+# - entity: "taxonomy_term"
+#   vid: "property_type"
+#   name: "Apartment"
+#
+# - entity: "taxonomy_term"
+#   vid: "property_type"
+#   name: "Commercial"
+#
+# - entity: "taxonomy_term"
+#   vid: "property_type"
+#   name: "Condominium"
+#
+# - entity: "taxonomy_term"
+#   vid: "property_type"
+#   name: "Foreclosures"
+#
+# - entity: "taxonomy_term"
+#   vid: "property_type"
+#   name: "House"
+#
+# - entity: "taxonomy_term"
+#   vid: "property_type"
+#   name: "Land"
+#
+# #Social Media
+# - entity: "taxonomy_term"
+#   vid: "social_media"
+#   name: "Facebook"
+#
+# - entity: "taxonomy_term"
+#   vid: "social_media"
+#   name: "Instagram"
+#
+# - entity: "taxonomy_term"
+#   vid: "social_media"
+#   name: "Twitter"
