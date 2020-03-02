@@ -393,7 +393,7 @@
 # Property #8
 - entity: "node"
   type: "property"
-  title: "nunc id cursus metus"
+  title: "aliquam eleifend mi in"
   status: 1
   # Text value of what default 'published' status one sets up in the CMS.
   moderation_state:
@@ -449,7 +449,7 @@
 # Property #9
 - entity: "node"
   type: "property"
-  title: "nunc id cursus metus"
+  title: "sed augue lacus viverra"
   status: 1
   # Text value of what default 'published' status one sets up in the CMS.
   moderation_state:
@@ -505,7 +505,7 @@
 # Property #10
 - entity: "node"
   type: "property"
-  title: "nunc id cursus metus"
+  title: "id neque aliquam vestibulum"
   status: 1
   # Text value of what default 'published' status one sets up in the CMS.
   moderation_state:
