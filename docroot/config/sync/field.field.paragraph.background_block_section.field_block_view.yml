@@ -1,0 +1,22 @@
+uuid: 43d50fbe-a1c8-4d1e-ba70-f1e67447db23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_view
+    - paragraphs.paragraphs_type.background_block_section
+  module:
+    - block_field
+id: paragraph.background_block_section.field_block_view
+field_name: field_block_view
+entity_type: paragraph
+bundle: background_block_section
+label: 'Block View'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  plugin_ids: {  }
+field_type: block_field

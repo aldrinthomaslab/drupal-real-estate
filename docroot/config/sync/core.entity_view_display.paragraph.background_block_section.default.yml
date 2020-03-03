@@ -1,0 +1,32 @@
+uuid: fe524061-03f8-4309-a572-e1143dec57fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.background_block_section.field_block_view
+    - field.field.paragraph.background_block_section.field_section_background
+    - paragraphs.paragraphs_type.background_block_section
+  module:
+    - block_field
+id: paragraph.background_block_section.default
+targetEntityType: paragraph
+bundle: background_block_section
+mode: default
+content:
+  field_block_view:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_section_background:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  search_api_excerpt: true

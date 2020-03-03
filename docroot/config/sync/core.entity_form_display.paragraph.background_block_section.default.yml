@@ -1,0 +1,37 @@
+uuid: f419e9e0-e8e4-4477-a5a7-0861d1412fdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.background_block_section.field_block_view
+    - field.field.paragraph.background_block_section.field_section_background
+    - paragraphs.paragraphs_type.background_block_section
+  module:
+    - block_field
+id: paragraph.background_block_section.default
+targetEntityType: paragraph
+bundle: background_block_section
+mode: default
+content:
+  field_block_view:
+    weight: 0
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_section_background:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

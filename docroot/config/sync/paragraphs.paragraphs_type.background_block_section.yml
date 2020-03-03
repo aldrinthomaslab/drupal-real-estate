@@ -1,0 +1,10 @@
+uuid: 0eac4465-cef8-46ed-aa33-ff3632ba0d66
+langcode: en
+status: true
+dependencies: {  }
+id: background_block_section
+label: 'Background Block Section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
