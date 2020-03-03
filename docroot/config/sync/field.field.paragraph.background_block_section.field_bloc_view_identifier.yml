@@ -1,0 +1,19 @@
+uuid: 120718dd-8c98-479f-ba78-cd28981434db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bloc_view_identifier
+    - paragraphs.paragraphs_type.background_block_section
+id: paragraph.background_block_section.field_bloc_view_identifier
+field_name: field_bloc_view_identifier
+entity_type: paragraph
+bundle: background_block_section
+label: 'Block View Identifier'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

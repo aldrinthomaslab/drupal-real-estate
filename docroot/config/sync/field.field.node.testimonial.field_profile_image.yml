@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_profile_image
-    - media.type.image
+    - media.type.profile_images
     - node.type.testimonial
+  content:
+    - 'media:profile_images:4dcb99c6-959e-4dca-8500-d35b51c74d72'
 id: node.testimonial.field_profile_image
 field_name: field_profile_image
 entity_type: node
@@ -14,13 +16,16 @@ label: 'Profile Image'
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    weight: '0'
+    target_uuid: 4dcb99c6-959e-4dca-8500-d35b51c74d72
 default_value_callback: ''
 settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      profile_images: profile_images
     sort:
       field: _none
     auto_create: false

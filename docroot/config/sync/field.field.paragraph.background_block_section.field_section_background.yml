@@ -1,10 +1,10 @@
-uuid: 2ec1bccd-7484-48d0-924b-3884c3a02198
+uuid: a790e5c0-5ff6-406e-8d7f-a954feba0cc4
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_section_background
-    - media.type.banner_images
+    - media.type.image
     - paragraphs.paragraphs_type.background_block_section
 id: paragraph.background_block_section.field_section_background
 field_name: field_section_background
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      banner_images: banner_images
+      image: image
     sort:
       field: _none
     auto_create: false

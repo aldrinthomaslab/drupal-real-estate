@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_homepage_components
     - node.type.homepage
+    - paragraphs.paragraphs_type.background_block_section
     - paragraphs.paragraphs_type.featured_agents
     - paragraphs.paragraphs_type.featured_property
     - paragraphs.paragraphs_type.home_header
@@ -29,6 +30,7 @@ settings:
     negate: 0
     target_bundles:
       featured_agents: featured_agents
+      background_block_section: background_block_section
       featured_property: featured_property
       misc_information: misc_information
       home_header: home_header
@@ -47,6 +49,9 @@ settings:
       featured_agents:
         enabled: true
         weight: 13
+      background_block_section:
+        enabled: true
+        weight: 14
       featured_property:
         enabled: true
         weight: 14

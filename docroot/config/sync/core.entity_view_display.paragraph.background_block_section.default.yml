@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.background_block_section.field_bloc_view_identifier
     - field.field.paragraph.background_block_section.field_block_view
     - field.field.paragraph.background_block_section.field_section_background
     - paragraphs.paragraphs_type.background_block_section
@@ -13,20 +14,29 @@ targetEntityType: paragraph
 bundle: background_block_section
 mode: default
 content:
+  field_bloc_view_identifier:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_block_view:
     weight: 0
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: block_field
     region: content
   field_section_background:
-    weight: 1
-    label: above
+    weight: 3
+    label: hidden
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
 hidden:
   search_api_excerpt: true
