@@ -27,7 +27,8 @@ function drupal_realestate_preprocess_paragraph__featured_property(&$variables) 
 
 function drupal_realestate_preprocess_paragraph__background_block_section(&$variables) {
   $classes = [
-    'testimonial-carousel' => ['testimonial_area', 'overlay']
+    'testimonial-carousel' => ['testimonial_area', 'overlay'],
+    'featured-properties'  => ['home_details']
   ];
 
   if (!empty($variables['elements']['field_section_background']['0']['#media'])) {
