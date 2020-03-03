@@ -14,6 +14,7 @@ global:
       css/nice-select.css: {}
       css/theme-default.css: {}
       css/style.css: {}
+      css/custom-style.css: {}
 
   js:
     https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js: {}
