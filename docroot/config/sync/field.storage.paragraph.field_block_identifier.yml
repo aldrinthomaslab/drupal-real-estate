@@ -1,11 +1,11 @@
-uuid: 6227d996-39fd-4ef9-876e-b6a725152945
+uuid: 365fe51e-fb07-4282-8cc6-1eae840f547c
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_bloc_view_identifier
-field_name: field_bloc_view_identifier
+id: paragraph.field_block_identifier
+field_name: field_block_identifier
 entity_type: paragraph
 type: string
 settings:

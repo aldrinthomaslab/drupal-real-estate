@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.background_block_section.field_bloc_view_identifier
+    - field.field.paragraph.background_block_section.field_block_identifier
     - field.field.paragraph.background_block_section.field_block_view
     - field.field.paragraph.background_block_section.field_section_background
     - paragraphs.paragraphs_type.background_block_section
@@ -15,8 +15,8 @@ targetEntityType: paragraph
 bundle: background_block_section
 mode: default
 content:
-  field_bloc_view_identifier:
-    weight: 0
+  field_block_identifier:
+    weight: 3
     settings:
       size: 60
       placeholder: ''

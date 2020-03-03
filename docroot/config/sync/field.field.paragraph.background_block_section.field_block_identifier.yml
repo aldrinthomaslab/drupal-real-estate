@@ -1,15 +1,15 @@
-uuid: 120718dd-8c98-479f-ba78-cd28981434db
+uuid: 2821f0b8-c796-4398-87e2-9b06250a2977
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_bloc_view_identifier
+    - field.storage.paragraph.field_block_identifier
     - paragraphs.paragraphs_type.background_block_section
-id: paragraph.background_block_section.field_bloc_view_identifier
-field_name: field_bloc_view_identifier
+id: paragraph.background_block_section.field_block_identifier
+field_name: field_block_identifier
 entity_type: paragraph
 bundle: background_block_section
-label: 'Block View Identifier'
+label: 'Block Identifier'
 description: ''
 required: true
 translatable: false

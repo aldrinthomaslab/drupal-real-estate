@@ -36,7 +36,7 @@ function drupal_realestate_preprocess_paragraph__background_block_section(&$vari
     $variables['background_image'] = file_create_url($media->field_media_image->entity->getFileUri());
   }
 
-  $identifier = $variables['elements']['field_bloc_view_identifier']['0']['#context']['value'];
+  $identifier = $variables['elements']['field_block_identifier']['0']['#context']['value'];
 
 
   $variables['attributes']['class'] = $classes[$identifier];
