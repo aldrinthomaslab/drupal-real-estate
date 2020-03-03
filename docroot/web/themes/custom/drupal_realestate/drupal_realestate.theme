@@ -25,6 +25,22 @@ function drupal_realestate_preprocess_paragraph__featured_property(&$variables) 
   $variables['background_image'] = file_create_url($media->field_media_image->entity->getFileUri());
 }
 
+function drupal_realestate_preprocess_paragraph__background_block_section(&$variables) {
+  $classes = [
+    'testimonial-carousel' => ['testimonial_area', 'overlay']
+  ];
+
+  if (!empty($variables['elements']['field_section_background']['0']['#media'])) {
+    $media = $variables['elements']['field_section_background']['0']['#media'];
+    $variables['background_image'] = file_create_url($media->field_media_image->entity->getFileUri());
+  }
+
+  $identifier = $variables['elements']['field_bloc_view_identifier']['0']['#context']['value'];
+
+
+  $variables['attributes']['class'] = $classes[$identifier];
+}
+
 function drupal_realestate_preprocess_block__drupal_realestate_internaladbanner(&$variables) {
   if (!empty($variables['elements']['content']['field_background_image']['0']['#media'])) {
     $media = $variables['elements']['content']['field_background_image']['0']['#media'];
@@ -44,6 +60,10 @@ function drupal_realestate_theme_suggestions_form_alter(array &$suggestions, arr
   if ($variables['element']['#form_id'] === 'property_search_form') {
     $suggestions[] = 'form__property_search_form';
   }
+}
+
+function drupal_realestate_preprocess_node(&$variables) {
+  $variables['base_path'] = base_path();
 }
 
 function drupal_realestate_preprocess_node__property(&$variables) {
