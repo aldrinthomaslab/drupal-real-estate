@@ -20,6 +20,10 @@ function drupal_realestate_preprocess_block(&$variables) {
   }
 }
 
+// function drupal_realestate_theme_preRender_views_view_carousel(array &$variables) {
+//   // $suggestions[] = 'views__view_testimonial_carousel';
+// }
+
 function drupal_realestate_preprocess_paragraph__featured_property(&$variables) {
   $media = $variables['elements']['field_section_background']['0']['#media'];
   $variables['background_image'] = file_create_url($media->field_media_image->entity->getFileUri());
