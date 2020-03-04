@@ -1,0 +1,83 @@
+- entity: "node"
+  type: "testimonial"
+  title: "fermentum dui faucibus in"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_content:
+    value: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra tellus in hac.
+  field_author_name:
+    value: Lauren Henry
+  field_author_title:
+    value: 'Client #1'
+  field_profile_image:
+    - entity: media
+      bundle: profile_images
+      name: 'client_1_image'
+      status: 1
+      field_media_image_1:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'testimonial.png'
+          alt: 'Client #1'
+
+- entity: "node"
+  type: "testimonial"
+  title: "augue lacus viverra vitae"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_content:
+    value: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra tellus in hac.
+  field_author_name:
+    value: Nathan Hicks
+  field_author_title:
+    value: 'Client #2'
+  field_profile_image:
+    - entity: media
+      bundle: profile_images
+      name: 'client_2_image'
+      status: 1
+      field_media_image_1:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'testimonial.png'
+          alt: 'Client #2'
+
+- entity: "node"
+  type: "testimonial"
+  title: "eu mi bibendum neque"
+  status: 1
+  # Text value of what default 'published' status one sets up in the CMS.
+  moderation_state:
+    value: 'published'
+  field_content:
+    value: >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra tellus in hac.
+  field_author_name:
+    value: Richard Woods
+  field_author_title:
+    value: 'Client #3'
+  field_profile_image:
+    - entity: media
+      bundle: profile_images
+      name: 'client_3_image'
+      status: 1
+      field_media_image_1:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'testimonial.png'
+          alt: 'Client #3'
