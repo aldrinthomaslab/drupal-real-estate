@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:property_form:f346886d-9afb-4ef1-8338-1a8c8c0f1eba'
+    - 'block_content:property_form:24f25f55-308f-4cbf-80a0-431c57ae467a'
   module:
     - block_content
     - system
@@ -14,9 +14,9 @@ theme: drupal_realestate
 region: content
 weight: -4
 provider: null
-plugin: 'block_content:f346886d-9afb-4ef1-8338-1a8c8c0f1eba'
+plugin: 'block_content:24f25f55-308f-4cbf-80a0-431c57ae467a'
 settings:
-  id: 'block_content:f346886d-9afb-4ef1-8338-1a8c8c0f1eba'
+  id: 'block_content:24f25f55-308f-4cbf-80a0-431c57ae467a'
   label: 'Search Property Page Banner'
   provider: block_content
   label_display: '0'

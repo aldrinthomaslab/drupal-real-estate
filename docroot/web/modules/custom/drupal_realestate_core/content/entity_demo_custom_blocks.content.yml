@@ -1,0 +1,130 @@
+# Internal Ad Banner Block
+- entity: "block_content"
+  # The machine name of the Custom Block type.
+  type: "banner_block"
+  # The admin title.
+  info: "Internal Ad Banner"
+  status: 1
+  # The UUID might be needed in order to assign it via configuration.
+  uuid: 831c79be-1665-4403-b8d6-8eefc3fbd179
+  field_background_image:
+    - entity: media
+      bundle: image
+      name: 'banner_block_image'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'add_property.png'
+          alt: 'Add Property'
+  field_banner_text:
+    - value: "Add your property for sale"
+  field_contact_number:
+    - value: "0987654321"
+
+# Footer Contact Block
+- entity: "block_content"
+  # The machine name of the Custom Block type.
+  type: "footer_contact_info"
+  # The admin title.
+  info: "Footer Contact"
+  status: 1
+  # The UUID might be needed in order to assign it via configuration.
+  uuid: 05fb616b-1c1d-4859-baac-f9f60125bc50
+  field_contact_address:
+    - value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  field_contact_email:
+    - value: 'sample@email.com'
+  field_contact_number:
+    - value: '1234567890'
+  field_logo_image:
+    - entity: media
+      bundle: logo_images
+      name: 'footer_logo_image'
+      status: 1
+      field_media_image_3:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'footer_logo.png'
+          alt: 'Footer Logo'
+  field_social_media_contacts:
+    - entity: 'paragraph'
+      type: 'social_media_link'
+      uuid: 'df60454a-a5f9-4461-8cf5-47a286a57e1e'
+      field_social_media:
+        - '#process':
+           callback: 'reference'
+           args:
+             - 'taxonomy_term'
+             - vid: 'social_media'
+               name: 'Facebook'
+      field_url: 'https://www.facebook.com'
+    - entity: 'paragraph'
+      type: 'social_media_link'
+      uuid: '192c970e-4728-411b-adab-96f3fc16fced'
+      field_social_media:
+        - '#process':
+           callback: 'reference'
+           args:
+             - 'taxonomy_term'
+             - vid: 'social_media'
+               name: 'Instagram'
+      field_url: 'https://www.something.com'
+    - entity: 'paragraph'
+      type: 'social_media_link'
+      uuid: 'b5e6d31d-f009-456f-9cf5-a4618fa28585'
+      field_social_media:
+        - '#process':
+           callback: 'reference'
+           args:
+             - 'taxonomy_term'
+             - vid: 'social_media'
+               name: 'Twitter'
+      field_url: 'https://www.twitter.com'
+
+# Internal Ad Banner Block
+- entity: "block_content"
+  # The machine name of the Custom Block type.
+  type: "long_text_block"
+  # The admin title.
+  info: "Trademark Footer"
+  status: 1
+  # The UUID might be needed in order to assign it via configuration.
+  uuid: 97288be8-1919-4759-be0c-4194f55c399b
+  field_text_content:
+    - value: "Copyright ©2020 All rights reserved | This template is made with C&T Drupal"
+
+# Header Property Search Block
+- entity: "block_content"
+  # The machine name of the Custom Block type.
+  type: "property_form"
+  # The admin title.
+  info: "Search Property Page Banner"
+  status: 1
+  # The UUID might be needed in order to assign it via configuration.
+  uuid: 24f25f55-308f-4cbf-80a0-431c57ae467a
+  field_background_image:
+    - entity: media
+      bundle: image
+      name: 'search_property_background_image'
+      status: 1
+      field_media_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'bradcam.png'
+          alt: 'Search Property Background Image'
+  field_search_form:
+      - plugin_id: 'drupal_realestate_searchform_block'
+        settings:
+          label_display: False
+  field_title:
+    - value: "Search Property"

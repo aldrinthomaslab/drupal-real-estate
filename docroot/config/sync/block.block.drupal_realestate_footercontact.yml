@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:footer_contact_info:e135aa9d-bdad-4295-abd6-50b852cc6fec'
+    - 'block_content:footer_contact_info:05fb616b-1c1d-4859-baac-f9f60125bc50'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: drupal_realestate
 region: footer_first
 weight: -6
 provider: null
-plugin: 'block_content:e135aa9d-bdad-4295-abd6-50b852cc6fec'
+plugin: 'block_content:05fb616b-1c1d-4859-baac-f9f60125bc50'
 settings:
-  id: 'block_content:e135aa9d-bdad-4295-abd6-50b852cc6fec'
+  id: 'block_content:05fb616b-1c1d-4859-baac-f9f60125bc50'
   label: 'Footer Contact'
   provider: block_content
   label_display: '0'
