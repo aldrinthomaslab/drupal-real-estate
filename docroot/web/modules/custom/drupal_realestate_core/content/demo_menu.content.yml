@@ -151,7 +151,7 @@
     uri: "internal:/blog"
 
 - entity: "menu_link_content"
-  title: "Blog"
+  title: "Blog 2"
   menu_name: "main"
   weight: 0
   # Defaults to enabled if omitted, but can be disabled by setting to 0.
