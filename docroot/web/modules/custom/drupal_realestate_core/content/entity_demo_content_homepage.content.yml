@@ -37,28 +37,6 @@
       uuid: 9cec1a8f-b169-4e29-91e3-4bc31b087260
       field_popular_properties_block:
         - plugin_id: 'views_block:popular_properties-popular_properties_block'
-
-
-    # - entity: 'paragraph'
-    #   type: 'featured_property'
-    #   uuid: e842724f-2868-4255-a568-db67aa4411c3
-    #   field_featured_properties_block:
-    #     - plugin_id: 'views_block:featured_properties-featured_properties'
-    #       settings:
-    #         label_display: False
-    #   field_section_background:
-    #     - entity: media
-    #       bundle: image
-    #       name: 'featured_property_image'
-    #       status: 1
-    #       field_media_image:
-    #         - '#process':
-    #             callback: 'file'
-    #             args:
-    #               - 'image'
-    #               - type: 'module'
-    #                 filename: 'home_details.png'
-    #           alt: 'Featured Properties Background'
     - entity: 'paragraph'
       type: 'background_block_section'
       uuid: 4e9e5d41-31c9-4c40-ac86-d589c8347180
